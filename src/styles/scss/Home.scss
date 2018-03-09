@@ -1,0 +1,53 @@
+@import "Global";
+
+// Desktop
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  > * {
+    flex: 1;
+  }
+  @media all and (max-width: 767px) {
+    flex-direction: column;
+    > * {
+      flex: 1 0 auto;
+      text-align: center;
+    }
+  }
+}
+
+.call-to-action {
+  > * {
+    margin-bottom: 30px;
+  }
+}
+
+.image-container {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.Button {
+  border: 2px solid $brand-color-one;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: $brand-color-one;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+// Animations
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+

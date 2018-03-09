@@ -1,0 +1,19 @@
+@import "Global";
+
+//Layout
+
+.services {
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 1rem;
+    .services-content {
+      max-width: 50%;
+    }
+    h2 {
+      color: $font-color-dark;
+    }
+  }
+}

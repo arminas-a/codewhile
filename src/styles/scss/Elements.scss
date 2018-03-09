@@ -1,0 +1,110 @@
+@import "Global";
+
+// Breadcrumb
+
+.breadcrumb {
+  h6 {
+    color: $brand-color-one;
+  }
+}
+
+// Quote
+
+.quote-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  > * {
+    margin: 1.25rem;
+  }
+  .quote-number, .quote-text {
+    color: $font-color-light;
+  }
+}
+
+.quote-container {
+  @include for-size(phone-only) {
+    .quote-number {
+      font-size: 2rem;
+    }
+    .quote-text {
+      font-size: 0.875rem;
+    }
+  }
+  @include for-size(tablet-portrait-up) {
+    .quote-number {
+      font-size: 2rem;
+    }
+    .quote-text {
+      font-size: 0.75rem;
+    }
+  }
+  @include for-size(tablet-landscape-up) {
+    .quote-number {
+      font-size: 3rem;
+    }
+    .quote-text {
+      font-size: 0.875rem;
+    }
+  }
+  @include for-size(desktop-up) {
+    height: 150px;
+    .quote-number {
+      font-size: 4rem;
+    }
+    .quote-text {
+      font-size: 1.15rem;
+    }
+  }
+}
+
+// Information
+
+.information-container {
+  .email {
+    display: block;
+    margin: 1rem 0;
+  }
+}
+
+// Social
+
+.social-container {
+  .social-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .social-icon {
+    display: inline;
+    margin-right: 1rem;
+  }
+}
+
+// Sitemap
+
+.sitemap-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .big-link {
+    display: block;
+  }
+  .sitemap-right {
+    > * {
+      margin-bottom: 1rem;
+    }
+  }
+  @include for-size(phone-only) {
+    justify-content: space-between;
+  }
+  @include for-size(tablet-portrait-up) {
+    margin-left: 2rem;
+    .sitemap-left {
+      margin-right: 0.5rem;
+    }
+    .sitemap-right {
+      margin-left: 0.5rem;
+    }
+  }
+}

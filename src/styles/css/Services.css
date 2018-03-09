@@ -1,0 +1,30 @@
+@media (max-width: 599px) {
+  .container, .footer {
+    margin-left: 1rem;
+    margin-right: 1rem; } }
+
+@media (min-width: 600px) {
+  .container, .footer {
+    margin-left: 5%;
+    margin-right: 5%; } }
+
+@media (min-width: 900px) {
+  .container, .footer {
+    margin-left: 10%;
+    margin-right: 10%; } }
+
+@media (min-width: 1200px) {
+  .container, .footer {
+    margin-left: 15%;
+    margin-right: 15%; } }
+
+.services section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1rem; }
+  .services section .services-content {
+    max-width: 50%; }
+  .services section h2 {
+    color: #323648; }

@@ -1,0 +1,89 @@
+@media (max-width: 599px) {
+  .container, .footer {
+    margin-left: 1rem;
+    margin-right: 1rem; } }
+
+@media (min-width: 600px) {
+  .container, .footer {
+    margin-left: 5%;
+    margin-right: 5%; } }
+
+@media (min-width: 900px) {
+  .container, .footer {
+    margin-left: 10%;
+    margin-right: 10%; } }
+
+@media (min-width: 1200px) {
+  .container, .footer {
+    margin-left: 15%;
+    margin-right: 15%; } }
+
+.breadcrumb h6 {
+  color: #ed1e79; }
+
+.quote-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 2px; }
+  .quote-container > * {
+    margin: 1.25rem; }
+  .quote-container .quote-number, .quote-container .quote-text {
+    color: #fefefe; }
+
+@media (max-width: 599px) {
+  .quote-container .quote-number {
+    font-size: 2rem; }
+  .quote-container .quote-text {
+    font-size: 0.875rem; } }
+
+@media (min-width: 600px) {
+  .quote-container .quote-number {
+    font-size: 2rem; }
+  .quote-container .quote-text {
+    font-size: 0.75rem; } }
+
+@media (min-width: 900px) {
+  .quote-container .quote-number {
+    font-size: 3rem; }
+  .quote-container .quote-text {
+    font-size: 0.875rem; } }
+
+@media (min-width: 1200px) {
+  .quote-container {
+    height: 150px; }
+    .quote-container .quote-number {
+      font-size: 4rem; }
+    .quote-container .quote-text {
+      font-size: 1.15rem; } }
+
+.information-container .email {
+  display: block;
+  margin: 1rem 0; }
+
+.social-container .social-list {
+  list-style-type: none;
+  padding: 0; }
+
+.social-container .social-icon {
+  display: inline;
+  margin-right: 1rem; }
+
+.sitemap-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .sitemap-container .big-link {
+    display: block; }
+  .sitemap-container .sitemap-right > * {
+    margin-bottom: 1rem; }
+  @media (max-width: 599px) {
+    .sitemap-container {
+      justify-content: space-between; } }
+  @media (min-width: 600px) {
+    .sitemap-container {
+      margin-left: 2rem; }
+      .sitemap-container .sitemap-left {
+        margin-right: 0.5rem; }
+      .sitemap-container .sitemap-right {
+        margin-left: 0.5rem; } }

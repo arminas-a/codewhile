@@ -1,0 +1,57 @@
+@import "Global";
+
+.footer-container {
+  border-top: 1px solid #d3d3d3;
+  margin-top: 50px;
+}
+
+.footer {
+  margin-top: 50px;
+  display: flex;
+  color: $font-color-dark;
+}
+
+//Media
+
+@include for-size(phone-only) {
+  .footer {
+    flex-direction: column-reverse;
+    .footer-left {
+      width: 100%;
+    }
+    .footer-right {
+      width: 100%;
+    }
+  }
+}
+@include for-size(tablet-portrait-up) {
+  .footer {
+    .footer-left {
+      width: 50%;
+    }
+    .footer-right {
+      width: 50%;
+    }
+  }
+}
+@include for-size(tablet-landscape-up) {
+  .footer {
+    .footer-left {
+      width: 55%;
+    }
+    .footer-right {
+      width: 45%;
+    }
+  }
+}
+@include for-size(desktop-up) {
+  .footer {
+    flex-direction: row;
+    .footer-left {
+      width: 60%;
+    }
+    .footer-right {
+      width: 40%;
+    }
+  }
+}
