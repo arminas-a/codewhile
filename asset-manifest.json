@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.6b958696.css",
   "main.css.map": "static/css/main.6b958696.css.map",
-  "main.js": "static/js/main.4c717a99.js",
-  "main.js.map": "static/js/main.4c717a99.js.map",
+  "main.js": "static/js/main.c68a1742.js",
+  "main.js.map": "static/js/main.c68a1742.js.map",
   "static/media/FF_Blender_Bold.otf": "static/media/FF_Blender_Bold.a082fd3d.otf",
   "static/media/FF_Mark_Bold.otf": "static/media/FF_Mark_Bold.476d44b0.otf",
   "static/media/FF_Mark_Regular.ttf": "static/media/FF_Mark_Regular.4ee9332c.ttf",
@@ -14,6 +14,6 @@
   "static/media/icomoon.svg?4jbxm7": "static/media/icomoon.fff2db84.svg",
   "static/media/icomoon.ttf?4jbxm7": "static/media/icomoon.c7334691.ttf",
   "static/media/icomoon.woff?4jbxm7": "static/media/icomoon.7d6711bf.woff",
-  "static/media/logo_dark.svg": "static/media/logo_dark.602e7ccd.svg",
-  "static/media/logo_light.svg": "static/media/logo_light.004425f2.svg"
+  "static/media/logo_dark.svg": "static/media/logo_dark.54eefb2a.svg",
+  "static/media/logo_light.svg": "static/media/logo_light.6ff81d06.svg"
 }
