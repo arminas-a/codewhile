@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.72b76fa8.css",
   "main.css.map": "static/css/main.72b76fa8.css.map",
-  "main.js": "static/js/main.dba21d5c.js",
-  "main.js.map": "static/js/main.dba21d5c.js.map",
+  "main.js": "static/js/main.06db61cf.js",
+  "main.js.map": "static/js/main.06db61cf.js.map",
   "static/media/FF_Mark_Bold.otf": "static/media/FF_Mark_Bold.476d44b0.otf",
   "static/media/FF_Mark_Regular.ttf": "static/media/FF_Mark_Regular.4ee9332c.ttf",
   "static/media/FF_More_Bold.otf": "static/media/FF_More_Bold.4d8755bf.otf",
@@ -12,6 +12,6 @@
   "static/media/icomoon.svg?4jbxm7": "static/media/icomoon.fff2db84.svg",
   "static/media/icomoon.ttf?4jbxm7": "static/media/icomoon.c7334691.ttf",
   "static/media/icomoon.woff?4jbxm7": "static/media/icomoon.7d6711bf.woff",
-  "static/media/web.svg": "static/media/web.f0aa1dbd.svg",
-  "static/media/world_map.svg": "static/media/world_map.2f5bc4e5.svg"
+  "static/media/teamwork.jpeg": "static/media/teamwork.188656e2.jpeg",
+  "static/media/web.svg": "static/media/web.f0aa1dbd.svg"
 }
