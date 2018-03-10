@@ -1,19 +1,19 @@
 {
-  "main.css": "static/css/main.47942c5d.css",
-  "main.css.map": "static/css/main.47942c5d.css.map",
-  "main.js": "static/js/main.543a828e.js",
-  "main.js.map": "static/js/main.543a828e.js.map",
+  "main.css": "static/css/main.7419e491.css",
+  "main.css.map": "static/css/main.7419e491.css.map",
+  "main.js": "static/js/main.411bc108.js",
+  "main.js.map": "static/js/main.411bc108.js.map",
   "static/media/FF_Blender_Bold.otf": "static/media/FF_Blender_Bold.a082fd3d.otf",
   "static/media/FF_Mark_Bold.otf": "static/media/FF_Mark_Bold.476d44b0.otf",
   "static/media/FF_Mark_Regular.ttf": "static/media/FF_Mark_Regular.4ee9332c.ttf",
   "static/media/FF_More_Bold.otf": "static/media/FF_More_Bold.4d8755bf.otf",
+  "static/media/about.svg": "static/media/about.507feece.svg",
   "static/media/codewhile_red.svg": "static/media/codewhile_red.b3530cf3.svg",
-  "static/media/home-hero.svg": "static/media/home-hero.54db047b.svg",
+  "static/media/home.svg": "static/media/home.45afab62.svg",
   "static/media/icomoon.eot?4jbxm7": "static/media/icomoon.e68c6d89.eot",
   "static/media/icomoon.svg?4jbxm7": "static/media/icomoon.fff2db84.svg",
   "static/media/icomoon.ttf?4jbxm7": "static/media/icomoon.c7334691.ttf",
   "static/media/icomoon.woff?4jbxm7": "static/media/icomoon.7d6711bf.woff",
   "static/media/logo_dark.svg": "static/media/logo_dark.96b22ac1.svg",
-  "static/media/logo_light.svg": "static/media/logo_light.315bd0fc.svg",
-  "static/media/web.svg": "static/media/web.f0aa1dbd.svg"
+  "static/media/logo_light.svg": "static/media/logo_light.315bd0fc.svg"
 }
