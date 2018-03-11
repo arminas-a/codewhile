@@ -8,6 +8,27 @@
   }
 }
 
+// Button
+
+.Button {
+  border: 2px solid $brand-color-one;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: $brand-color-one;
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  width: 140px;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.Button:hover {
+  background: $brand-color-one;
+  color: $font-color-light;
+  transition: 0.5s;
+}
+
 // Quote
 
 .quote-container {
@@ -18,7 +39,8 @@
   > * {
     margin: 1.25rem;
   }
-  .quote-number, .quote-text {
+  .quote-number,
+  .quote-text {
     color: $font-color-light;
   }
 }
@@ -87,6 +109,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 2rem;
   .big-link {
     display: block;
   }
@@ -105,6 +128,116 @@
     }
     .sitemap-right {
       margin-left: 0.5rem;
+    }
+  }
+}
+
+//Section
+
+.section-container {
+  height: auto;
+}
+
+.section-container:nth-child(odd) {
+  .section-content {
+    margin-left: 1rem;
+    @include for-size(phone-only) {
+      margin-left: 0rem;
+    }
+  }
+}
+
+.section-container:nth-child(even) {
+  .section-content {
+    margin-right: 1rem;
+    @include for-size(phone-only) {
+      margin-right: 0rem;
+    }
+  }
+}
+
+.section-container:nth-child(1n) {
+  background: #f5f5f5;
+}
+
+.section-container:nth-child(2n) {
+  background: #fff;
+  .section {
+    flex-direction: row-reverse;
+  }
+}
+
+.section-container:nth-child(3n) {
+  background: $font-color-dark;
+  .header,
+  .description,
+  .comments {
+    color: $font-color-light;
+  }
+}
+
+.section-container:last-child {
+  background: #fff;
+  .section {
+    .header {
+      color: $font-color-dark;
+    }
+    .header,
+    .description,
+    .comments {
+      color: $font-color-darken;
+    }
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10rem 0;
+  @include for-size(phone-only) {
+    display: block;
+    padding: 5rem 0;
+  }
+  .section-image {
+    vertical-align: center;
+    img {
+      width: 100%;
+      max-height: 400px;
+      height: auto;
+    }
+  }
+
+  > * {
+    flex: 1;
+  }
+  .header {
+    color: $font-color-dark;
+    font-size: 36px;
+    @include for-size(phone-only) {
+      font-size: 22px;
+    }
+  }
+  .header,
+  .description,
+  .comments {
+    color: $font-color-darken;
+  }
+  .comments {
+    font-family: "FF_Mark_Bold";
+  }
+  .section-content {
+    width: 50%;
+    @include for-size(phone-only) {
+      width: 100%;
+    }
+    align-content: center;
+    hr {
+      margin: 1rem;
+      padding: 0;
+    }
+    > * {
+      padding: 1rem 0;
     }
   }
 }

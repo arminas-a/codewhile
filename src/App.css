@@ -23,7 +23,7 @@ button {
   font-family: "FF_Mark_Regular", sans-serif;
   color: #6d6f7b;
   text-decoration: none;
-  line-height: 1.5;
+  line-height: 1.75;
   font-size: calc(1rem + (0 * (100vw - 400px)/ 624));
 }
 
@@ -40,8 +40,12 @@ h6,
   padding: 0;
 }
 
+.menu-link {
+  font-family: "FF_More_Bold", serif;
+}
 
-.quote-number, .quote-text, .menu-link {
+.quote-number,
+.quote-text {
   font-family: "FF_Mark_Regular";
 }
 
@@ -69,4 +73,5 @@ h6,
 
 hr {
   margin: 2rem 0;
+  opacity: 0.25;
 }

@@ -1,14 +1,22 @@
 @import "Global";
 
 .footer-container {
-  border-top: 1px solid #d3d3d3;
+  border-top: 1px solid $font-color-light;
   margin-top: 50px;
+  background: $font-color-dark;
 }
 
 .footer {
   margin-top: 50px;
   display: flex;
   color: $font-color-dark;
+  h6, p, a {
+    color: $font-color-light;
+  }
+}
+
+.footer-logo {
+  height: 30px;
 }
 
 //Media

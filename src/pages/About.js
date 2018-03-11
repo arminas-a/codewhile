@@ -4,6 +4,7 @@ import "./../styles/css/Global.css";
 import "./../styles/css/About.css";
 import Breadcrumb from "../components/elements/Breadcrumb";
 import Quote from '../components/elements/Quote';
+import image from "../images/about.svg";
 
 
 const About = () => (
@@ -45,9 +46,7 @@ const About = () => (
         </ul>
       </div>
       <div className="about-right">
-      <Quote color={"#ED1E79"} number={53} text={"of mobile users abandon sites that take over 3 seconds to load"}/>
-      <Quote color={"#BD10E0"} number={53} text={"of mobile users abandon sites that take over 3 seconds to load"}/>
-      <Quote color={"#9013FE"} number={53} text={"of mobile users abandon sites that take over 3 seconds to load"}/>
+        <img className="image" src={image} alt=""/>
       </div>
     </div>
   </CSSTransitionGroup>

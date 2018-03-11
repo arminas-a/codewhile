@@ -1,25 +1,58 @@
 @media (max-width: 599px) {
-  .container, .footer {
+  .container, .footer, .section {
     margin-left: 1rem;
     margin-right: 1rem; } }
 
 @media (min-width: 600px) {
-  .container, .footer {
-    margin-left: 5%;
-    margin-right: 5%; } }
+  .container, .footer, .section {
+    margin-left: 5rem;
+    margin-right: 5rem; } }
 
 @media (min-width: 900px) {
-  .container, .footer {
-    margin-left: 10%;
-    margin-right: 10%; } }
+  .container, .footer, .section {
+    margin-left: 10rem;
+    margin-right: 10rem; } }
 
 @media (min-width: 1200px) {
-  .container, .footer {
-    margin-left: 15%;
-    margin-right: 15%; } }
+  .container, .footer, .section {
+    margin-left: 20rem;
+    margin-right: 20rem; } }
+
+@media (max-width: 599px) {
+  h1 {
+    font-size: 2rem; } }
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2.5rem; } }
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 3rem; } }
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem; } }
 
 .breadcrumb h6 {
-  color: #ed1e79; }
+  color: #FF6A00; }
+
+.Button {
+  border: 2px solid #FF6A00;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #FF6A00;
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  width: 140px;
+  border-radius: 2px;
+  transition: 0.5s; }
+
+.Button:hover {
+  background: #FF6A00;
+  color: #fff;
+  transition: 0.5s; }
 
 .quote-container {
   display: flex;
@@ -28,8 +61,9 @@
   border-radius: 2px; }
   .quote-container > * {
     margin: 1.25rem; }
-  .quote-container .quote-number, .quote-container .quote-text {
-    color: #fefefe; }
+  .quote-container .quote-number,
+  .quote-container .quote-text {
+    color: #fff; }
 
 @media (max-width: 599px) {
   .quote-container .quote-number {
@@ -72,7 +106,8 @@
 .sitemap-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin-bottom: 2rem; }
   .sitemap-container .big-link {
     display: block; }
   .sitemap-container .sitemap-right > * {
@@ -87,3 +122,83 @@
         margin-right: 0.5rem; }
       .sitemap-container .sitemap-right {
         margin-left: 0.5rem; } }
+
+.section-container {
+  height: auto; }
+
+.section-container:nth-child(odd) .section-content {
+  margin-left: 1rem; }
+  @media (max-width: 599px) {
+    .section-container:nth-child(odd) .section-content {
+      margin-left: 0rem; } }
+
+.section-container:nth-child(even) .section-content {
+  margin-right: 1rem; }
+  @media (max-width: 599px) {
+    .section-container:nth-child(even) .section-content {
+      margin-right: 0rem; } }
+
+.section-container:nth-child(1n) {
+  background: #f5f5f5; }
+
+.section-container:nth-child(2n) {
+  background: #fff; }
+  .section-container:nth-child(2n) .section {
+    flex-direction: row-reverse; }
+
+.section-container:nth-child(3n) {
+  background: #323648; }
+  .section-container:nth-child(3n) .header,
+  .section-container:nth-child(3n) .description,
+  .section-container:nth-child(3n) .comments {
+    color: #fff; }
+
+.section-container:last-child {
+  background: #fff; }
+  .section-container:last-child .section .header {
+    color: #323648; }
+  .section-container:last-child .section .header,
+  .section-container:last-child .section .description,
+  .section-container:last-child .section .comments {
+    color: #5B5E6D; }
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10rem 0; }
+  @media (max-width: 599px) {
+    .section {
+      display: block;
+      padding: 5rem 0; } }
+  .section .section-image {
+    vertical-align: center; }
+    .section .section-image img {
+      width: 100%;
+      max-height: 400px;
+      height: auto; }
+  .section > * {
+    flex: 1; }
+  .section .header {
+    color: #323648;
+    font-size: 36px; }
+    @media (max-width: 599px) {
+      .section .header {
+        font-size: 22px; } }
+  .section .header,
+  .section .description,
+  .section .comments {
+    color: #5B5E6D; }
+  .section .comments {
+    font-family: "FF_Mark_Bold"; }
+  .section .section-content {
+    width: 50%;
+    align-content: center; }
+    @media (max-width: 599px) {
+      .section .section-content {
+        width: 100%; } }
+    .section .section-content hr {
+      margin: 1rem;
+      padding: 0; }
+    .section .section-content > * {
+      padding: 1rem 0; }

@@ -1,30 +1,41 @@
 @media (max-width: 599px) {
-  .container, .footer {
+  .container, .footer, .section {
     margin-left: 1rem;
     margin-right: 1rem; } }
 
 @media (min-width: 600px) {
-  .container, .footer {
-    margin-left: 5%;
-    margin-right: 5%; } }
+  .container, .footer, .section {
+    margin-left: 5rem;
+    margin-right: 5rem; } }
 
 @media (min-width: 900px) {
-  .container, .footer {
-    margin-left: 10%;
-    margin-right: 10%; } }
+  .container, .footer, .section {
+    margin-left: 10rem;
+    margin-right: 10rem; } }
 
 @media (min-width: 1200px) {
-  .container, .footer {
-    margin-left: 15%;
-    margin-right: 15%; } }
+  .container, .footer, .section {
+    margin-left: 20rem;
+    margin-right: 20rem; } }
 
-.services section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  font-size: 1rem; }
-  .services section .services-content {
-    max-width: 50%; }
-  .services section h2 {
-    color: #323648; }
+@media (max-width: 599px) {
+  h1 {
+    font-size: 2rem; } }
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2.5rem; } }
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 3rem; } }
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem; } }
+
+.services-intro-title {
+  font-size: 56px; }
+  @media (max-width: 599px) {
+    .services-intro-title {
+      font-size: 28px; } }

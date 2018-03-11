@@ -21,6 +21,10 @@
   font-family: "FF_More_Bold";
   src: url("./fonts/FF_More_Bold.otf");
 }
+@font-face {
+  font-family: "FF_Blender_Bold";
+  src: url("./fonts/FF_Blender_Bold.otf");
+}
 
 [class^="icon-"],
 [class*=" icon-"] {
@@ -40,26 +44,26 @@
 
 .icon-brand3:before {
   content: "\e900";
-  color: #0077b5;
-  font-size: 16px;
+  /* color: #0077b5; */
+  font-size: 32px;
 }
 .icon-brand:before {
   content: "\e901";
-  color: #e4405f;
-  font-size: 16px;
+  /* color: #e4405f; */
+  font-size: 32px;
 }
 .icon-instagram:before {
   content: "\e901";
-  color: #e4405f;
-  font-size: 16px;
+  /* color: #e4405f; */
+  font-size: 32px;
 }
 .icon-brand2:before {
   content: "\e902";
-  color: #3b5998;
-  font-size: 16px;
+  /* color: #3b5998; */
+  font-size: 32px;
 }
 .icon-facebook:before {
   content: "\e902";
-  color: #3b5998;
-  font-size: 16px;
+  /* color: #3b5998; */
+  font-size: 32px;
 }

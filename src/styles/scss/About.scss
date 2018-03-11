@@ -1,35 +1,36 @@
 @import "Global";
 
 @include for-size(phone-only) {
-    .about {
-        .about-right {
-            margin-top: 2rem;
-        }
+  .about {
+    .about-right {
+      margin-top: 2rem;
+      display: block;
+      .image {
+        max-width: 100%;
+      }
     }
+  }
 }
 @include for-size(tablet-portrait-up) {
-    .about {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .about-left {
-            width: 60%;
-            margin-right: 1rem;
-        }
-        .about-right {
-            width: 40%;
-            margin-left: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .about-left {
+      width: 50%;
+      margin-right: 1rem;
     }
-
+    .about-right {
+      width: 50%;
+      margin-left: 1rem;
+      .image {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 @include for-size(tablet-landscape-up) {
-
-
 }
 @include for-size(desktop-up) {
-
 }

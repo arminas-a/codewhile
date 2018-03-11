@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 import { CSSTransitionGroup } from "react-transition-group";
 import "./../styles/css/Global.css";
 import "./../styles/css/Home.css";
-import world_map from "./../images/world_map.svg";
+import image from "./../images/home.svg";
+import Button from "../components/elements/Button";
 
 const Home = () => (
   <CSSTransitionGroup
@@ -16,18 +17,29 @@ const Home = () => (
     className="container"
   >
     <div className="home">
-      <div className="call-to-action">
-        <h1>Advanced application development solutions</h1>
-        <p>We make your products popular and your online presence memorable.</p>
-        <NavLink to="/services" className="Button">
-          Services
-        </NavLink>
+    <div className="call-to-action-container">
+        <div className="call-to-action">
+          <h1>Advanced application development solutions</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem iure
+            explicabo harum fugit praesentium! Aliquid asperiores consequatur
+            quaerat quae aliquam.
+          </p>
+          <Button text={"Services"} />
+        </div>
       </div>
-      <div className="image-container">
-        <img src={world_map} />
-      </div>
+      <img className="image-container" src={image} alt="" />
     </div>
   </CSSTransitionGroup>
 );
 
 export default Home;
+
+// <div className="call-to-action">
+// <h1>Advanced application development solutions</h1>
+// <p>We make your products popular and your online presence memorable.</p>
+// <Button text={"Services"} />
+// </div>
+// <div className="image-container">
+// <img src={world_map} />
+// </div>

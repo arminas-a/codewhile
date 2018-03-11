@@ -1,9 +1,9 @@
-$font-color-light: #fefefe;
+$font-color-light: #fff;
 $font-color-dark: #323648;
-$font-color-darken: #888888;
+$font-color-darken: #5B5E6D;
 $background-light: #ffffff;
 $background-dark: #212121;
-$brand-color-one: #ed1e79;
+$brand-color-one: #FF6A00;
 $brand-color-two: #9013fe;
 
 @mixin for-size($range) {
@@ -36,21 +36,45 @@ $brand-color-two: #9013fe;
 }
 
 // usage
-.container, .footer {
+.container, .footer, .section {
     @include for-size(phone-only) {
         margin-left: 1rem;
         margin-right: 1rem;
     }
     @include for-size(tablet-portrait-up) {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
     @include for-size(tablet-landscape-up) {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 10rem;
+        margin-right: 10rem;
     }
     @include for-size(desktop-up) {
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 20rem;
+        margin-right: 20rem;
     }
 }
+
+// TYPOGRAPHY
+
+
+  @include for-size(phone-only) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  @include for-size(tablet-portrait-up) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  @include for-size(tablet-landscape-up) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  @include for-size(desktop-up) {
+    h1 {
+      font-size: 4rem;
+    }
+  }

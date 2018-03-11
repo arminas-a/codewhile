@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/css/Global.css";
 import "../../styles/css/Elements.css";
-import logo from "../../images/codewhile_red.svg";
+import logo_light from "../../images/logo_light.svg";
 import Social from './Social';
 
 
@@ -17,12 +17,12 @@ const Information = () => (
       cum! Ad, aperiam aut.
     </p>
     <hr />
-    <img src={logo} alt="" />
+    <img className="footer-logo" src={logo_light} alt="" />
     <a className="email" href="">
       info@codewhile.com
     </a>
-    <p>© Codewhile, Inc 2013 - 2017. All rights reserved.</p>
     <Social />
+    <p>© Codewhile, Inc 2013 - 2017. All rights reserved.</p>
   </div>
 );
 

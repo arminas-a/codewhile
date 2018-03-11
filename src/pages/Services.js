@@ -2,9 +2,24 @@ import React from "react";
 import { CSSTransitionGroup } from "react-transition-group";
 import "./../styles/css/Global.css";
 import "./../styles/css/Services.css";
+import Section from "../components/elements/Section";
+import services from "../data/data";
+import Breadcrumb from '../components/elements/Breadcrumb';
 
-const Services = () => (
-  <div className="services">
+
+const Services = () => {
+  let servicesGrid = services.map(service => {
+    return (
+      <Section
+        key={service.id}
+        heading={service.heading}
+        description={service.description}
+        comments={service.comments}
+        image={service.image}
+      />
+    );
+  });
+  return (
     <CSSTransitionGroup
       transitionName="example"
       transitionAppear={true}
@@ -12,46 +27,19 @@ const Services = () => (
       transitionEnter={false}
       transitionLeave={false}
       component="div"
-      className="container"
+      className="services"
     >
+    <div className="container">
     <div className="services-intro">
-      <h2>Services</h2>
-      <p>Let me describe how I could help you.</p>
+        <Breadcrumb title={"What we do"}/>
+        <h2 className="services-intro-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, tempore?</h2>
+        <p className="services-intro-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt dicta est asperiores cupiditate perspiciatis nesciunt tempora corrupti fuga amet distinctio accusamus, labore illum ea minus nulla, sed dolorem. Ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corrupti ducimus iusto est impedit quibusdam reprehenderit, numquam facere molestiae voluptatum?</p>
       </div>
-      <div className="services-content">
-      <article>
-        <h3>Design</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptate
-          maiores ratione quas exercitationem quia odit dicta excepturi,
-          debitis, nihil suscipit cumque repellat? Unde optio eos incidunt
-          molestias odit, ipsum deserunt eligendi blanditiis fugiat minus
-          ratione corporis soluta dolorum nulla?
-        </p>
-      </article>
-      <article>
-        <h3>Design</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptate
-          maiores ratione quas exercitationem quia odit dicta excepturi,
-          debitis, nihil suscipit cumque repellat? Unde optio eos incidunt
-          molestias odit, ipsum deserunt eligendi blanditiis fugiat minus
-          ratione corporis soluta dolorum nulla?
-        </p>
-      </article>
-      <article>
-        <h3>Design</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptate
-          maiores ratione quas exercitationem quia odit dicta excepturi,
-          debitis, nihil suscipit cumque repellat? Unde optio eos incidunt
-          molestias odit, ipsum deserunt eligendi blanditiis fugiat minus
-          ratione corporis soluta dolorum nulla?
-        </p>
-      </article>
-      </div>
+    </div>
+
+      {servicesGrid}
     </CSSTransitionGroup>
-  </div>
-);
+  );
+};
 
 export default Services;

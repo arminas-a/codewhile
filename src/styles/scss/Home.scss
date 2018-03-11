@@ -3,41 +3,70 @@
 // Desktop
 
 .home {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  > * {
-    flex: 1;
+  text-align: center;
+  position: relative;
+  h1 {
+    color: $font-color-dark;
   }
-  @media all and (max-width: 767px) {
+  p {
+    color: $font-color-darken;
+  }
+}
+
+.call-to-action-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 50px;
+  .call-to-action {
+    vertical-align: middle;
+    display: flex;
     flex-direction: column;
+    align-items: center;
     > * {
-      flex: 1 0 auto;
-      text-align: center;
+      margin: 1rem;
+    }
+  }
+  @include for-size(phone-only) {
+    background-color: rgba(255, 255, 255, 0.85);
+
+    h1 {
+      font-size: 1.75rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  @include for-size(tablet-portrait-up) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.15rem;
+    }
+  }
+  @include for-size(tablet-landscape-up) {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+  }
+  @include for-size(desktop-up) {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.25rem;
     }
   }
 }
 
-.call-to-action {
-  > * {
-    margin-bottom: 30px;
-  }
-}
-
 .image-container {
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.Button {
-  border: 2px solid $brand-color-one;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: $brand-color-one;
-  font-size: 18px;
-  font-weight: 700;
+  width: 100%;
+  height: auto;
+  display: absolute;
+  margin-left: -15%;
+  margin-right: -15%;
 }
 
 // Animations
@@ -50,4 +79,3 @@
   opacity: 1;
   transition: opacity 0.5s ease-in;
 }
-
