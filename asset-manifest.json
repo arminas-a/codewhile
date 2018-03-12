@@ -1,14 +1,14 @@
 {
-  "main.css": "static/css/main.4384d207.css",
-  "main.css.map": "static/css/main.4384d207.css.map",
-  "main.js": "static/js/main.0c787263.js",
-  "main.js.map": "static/js/main.0c787263.js.map",
+  "main.css": "static/css/main.50b9be33.css",
+  "main.css.map": "static/css/main.50b9be33.css.map",
+  "main.js": "static/js/main.c7aa7e2a.js",
+  "main.js.map": "static/js/main.c7aa7e2a.js.map",
   "static/media/Cochin.ttc": "static/media/Cochin.498f4ea7.ttc",
   "static/media/FF_Blender_Bold.otf": "static/media/FF_Blender_Bold.a082fd3d.otf",
   "static/media/FF_Mark_Bold.otf": "static/media/FF_Mark_Bold.476d44b0.otf",
   "static/media/FF_Mark_Regular.ttf": "static/media/FF_Mark_Regular.4ee9332c.ttf",
   "static/media/FF_More_Bold.otf": "static/media/FF_More_Bold.4d8755bf.otf",
-  "static/media/about.svg": "static/media/about.507feece.svg",
+  "static/media/about.svg": "static/media/about.e8735470.svg",
   "static/media/application_development.svg": "static/media/application_development.350494e5.svg",
   "static/media/branding.svg": "static/media/branding.1ee7a8bb.svg",
   "static/media/burger_button4.svg": "static/media/burger_button4.3ead58d7.svg",
@@ -23,7 +23,7 @@
   "static/media/logo_light.svg": "static/media/logo_light.409d8ec8.svg",
   "static/media/outsourcing.svg": "static/media/outsourcing.98d36124.svg",
   "static/media/social_media_advertising.svg": "static/media/social_media_advertising.9c6ae5ca.svg",
-  "static/media/software_prototyping.svg": "static/media/software_prototyping.e8735470.svg",
+  "static/media/software_prototyping.svg": "static/media/software_prototyping.507feece.svg",
   "static/media/technology_consulting.svg": "static/media/technology_consulting.9eafc052.svg",
   "static/media/web_design.svg": "static/media/web_design.955caf8e.svg"
 }
