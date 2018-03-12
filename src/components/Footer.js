@@ -1,12 +1,16 @@
 import React from "react";
 import "./../styles/css/Global.css";
 import "./../styles/css/Footer.css";
-
 import Social from "./elements/Social";
 import Sitemap from './elements/Sitemap';
 import Information from './elements/Information';
+import services from "../data/data";
 
-const sublinks = ['Tech consulting', 'Application development', 'Web design', 'User experience design', 'Branding', 'Social media advertising', 'Hosting & Deployment', 'Outsourcing'];
+const sublinks = services.map(service => {
+  return service.heading;
+});
+
+
 const links = ['About', 'Career', 'Contact']
 
 const Footer = () => (

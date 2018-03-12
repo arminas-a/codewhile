@@ -1,5 +1,5 @@
 import React from "react";
-import { slide as Menu } from "react-burger-menu";
+import { stack as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 import { array } from "prop-types";
 import "./../styles/css/Global.css";
@@ -7,6 +7,7 @@ import "./../styles/css/Header.css";
 import logo_dark from "./../images/logo_dark.svg";
 import logo_light from "./../images/logo_light.svg";
 import Social from "./../components/elements/Social";
+import burger_button from "../images/burger_button4.svg";
 
 
 
@@ -34,7 +35,7 @@ const Header = ({ elements }) => (
         </ul>
         <hr/>
         <a className="header-email" href="">info@codewhile.com</a>
-        <p>© Codewhile, Inc 2013 - 2017. All rights reserved.</p>
+        <p className="header-copyright">© Codewhile, Inc 2013 - 2017. All rights reserved.</p>
       </Menu>
     </div>
   </div>

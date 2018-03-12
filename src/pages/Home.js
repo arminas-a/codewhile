@@ -14,7 +14,7 @@ const Home = () => (
     transitionEnter={false}
     transitionLeave={false}
     component="div"
-    className="container"
+    className="home-container"
   >
     <div className="home">
     <div className="call-to-action-container">

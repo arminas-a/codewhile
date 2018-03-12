@@ -2,7 +2,21 @@
 
 .services-intro-title {
   font-size: 56px;
+  display: block;
   @include for-size(phone-only) {
     font-size: 28px;
   }
+}
+.services-intro-description{
+    font-size: 1.15rem;
+    @include for-size(tablet-landscape-up) {
+        width: 50%;
+    }
+}
+
+.services-intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
 }

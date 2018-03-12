@@ -4,8 +4,8 @@ import "./../styles/css/Global.css";
 import "./../styles/css/Services.css";
 import Section from "../components/elements/Section";
 import services from "../data/data";
-import Breadcrumb from '../components/elements/Breadcrumb';
-
+import Breadcrumb from "../components/elements/Breadcrumb";
+import coding from "../images/coding.png";
 
 const Services = () => {
   let servicesGrid = services.map(service => {
@@ -27,17 +27,19 @@ const Services = () => {
       transitionEnter={false}
       transitionLeave={false}
       component="div"
-      className="services"
+      className="services-container"
     >
-    <div className="container">
-    <div className="services-intro">
-        <Breadcrumb title={"What we do"}/>
-        <h2 className="services-intro-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, tempore?</h2>
-        <p className="services-intro-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt dicta est asperiores cupiditate perspiciatis nesciunt tempora corrupti fuga amet distinctio accusamus, labore illum ea minus nulla, sed dolorem. Ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corrupti ducimus iusto est impedit quibusdam reprehenderit, numquam facere molestiae voluptatum?</p>
+      <div className="services-intro">
+        <div className="services-intro-content">
+          <Breadcrumb title={"What we do"} />
+          <h2 className="services-intro-title">
+            We provide digital presence services to businesses, ventures and individuals.
+          </h2>
+        </div>
       </div>
-    </div>
-
+    
       {servicesGrid}
+
     </CSSTransitionGroup>
   );
 };

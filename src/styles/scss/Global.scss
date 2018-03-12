@@ -36,7 +36,11 @@ $brand-color-two: #9013fe;
 }
 
 // usage
-.container, .footer, .section {
+.home-container,
+.about-container,
+.section,
+.services-intro,
+.footer {
     @include for-size(phone-only) {
         margin-left: 1rem;
         margin-right: 1rem;

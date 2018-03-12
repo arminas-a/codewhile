@@ -1,20 +1,36 @@
 @media (max-width: 599px) {
-  .container, .footer, .section {
+  .home-container,
+  .about-container,
+  .section,
+  .services-intro,
+  .footer {
     margin-left: 1rem;
     margin-right: 1rem; } }
 
 @media (min-width: 600px) {
-  .container, .footer, .section {
+  .home-container,
+  .about-container,
+  .section,
+  .services-intro,
+  .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
 
 @media (min-width: 900px) {
-  .container, .footer, .section {
+  .home-container,
+  .about-container,
+  .section,
+  .services-intro,
+  .footer {
     margin-left: 10rem;
     margin-right: 10rem; } }
 
 @media (min-width: 1200px) {
-  .container, .footer, .section {
+  .home-container,
+  .about-container,
+  .section,
+  .services-intro,
+  .footer {
     margin-left: 20rem;
     margin-right: 20rem; } }
 
@@ -33,6 +49,9 @@
 @media (min-width: 1200px) {
   h1 {
     font-size: 4rem; } }
+
+.about-container {
+  margin-bottom: 50px; }
 
 @media (max-width: 599px) {
   .about .about-right {

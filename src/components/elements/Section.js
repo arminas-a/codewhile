@@ -1,18 +1,19 @@
 import React from "react";
+import { Route } from "react-router-dom";
 import { string } from "prop-types";
 import "./../../styles/css/Elements.css";
 
 const Section = ({ image, heading, description, comments }) => (
-  <div className="section-container">
+  <div className="section-container" id={heading.replace(" ", "-").toLowerCase()}>
     <div className={`section ${heading.replace(" ", "-").toLowerCase()}`}>
       <div className="section-image">
         <img src={image} alt={heading} />
       </div>
       <div className="section-content">
-        <h6 className="header">{heading}</h6>
-        <p className="description">{description}</p>
+        <h6 className="section-header">{heading}</h6>
+        <p className="section-description">{description}</p>
         <hr />
-        <p className="comments">Expertise: {comments}</p>
+        <p className="section-extra">Expertise: {comments}</p>
       </div>
     </div>
   </div>

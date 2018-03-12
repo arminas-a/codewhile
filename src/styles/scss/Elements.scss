@@ -84,9 +84,19 @@
 // Information
 
 .information-container {
-  .email {
+  .information-title {
+    font-family: "FF_Mark_Bold", "sans serif";
+    font-size: 1.25rem;
+  }
+  .information-email {
     display: block;
     margin: 1rem 0;
+    font-size: 0.913rem;
+  }
+  .information-text,
+  .information-copyright {
+    display: block;
+    font-size: 0.913rem;
   }
 }
 
@@ -110,8 +120,14 @@
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 2rem;
-  .big-link {
+  .link {
     display: block;
+    font-family: "FF_Mark_Bold", "sans serif";
+    font-size: 1.25rem;
+  }
+  .sub-link {
+    display: block;
+    font-size: 0.913rem;
   }
   .sitemap-right {
     > * {
@@ -139,6 +155,12 @@
 }
 
 .section-container:nth-child(odd) {
+  .section-image {
+    margin-right: 1rem;
+    @include for-size(phone-only) {
+      margin-right: 0rem;
+    }
+  }
   .section-content {
     margin-left: 1rem;
     @include for-size(phone-only) {
@@ -147,7 +169,24 @@
   }
 }
 
+.section-container {
+  @include for-size(phone-only) {
+    .section-image {
+      margin-bottom: 1rem;
+    }
+    .section-content {
+      margin-top: 1rem;
+    }
+  }
+}
+
 .section-container:nth-child(even) {
+  .section-image {
+    margin-left: 1rem;
+    @include for-size(phone-only) {
+      margin-left: 0rem;
+    }
+  }
   .section-content {
     margin-right: 1rem;
     @include for-size(phone-only) {
@@ -169,22 +208,22 @@
 
 .section-container:nth-child(3n) {
   background: $font-color-dark;
-  .header,
-  .description,
-  .comments {
+  .section-header,
+  .section-description,
+  .section-extra {
     color: $font-color-light;
   }
 }
 
 .section-container:last-child {
-  background: #fff;
+  background: #f5f5f5;
   .section {
-    .header {
+    .section-header {
       color: $font-color-dark;
     }
-    .header,
-    .description,
-    .comments {
+    .section-header,
+    .section-description,
+    .section-extra {
       color: $font-color-darken;
     }
   }
@@ -194,7 +233,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10rem 0;
+  padding: 5rem 0;
   @include for-size(phone-only) {
     display: block;
     padding: 5rem 0;
@@ -211,19 +250,18 @@
   > * {
     flex: 1;
   }
-  .header {
+  .section-header {
     color: $font-color-dark;
-    font-size: 36px;
+    font-size: 28px;
     @include for-size(phone-only) {
       font-size: 22px;
     }
   }
-  .header,
-  .description,
-  .comments {
+  .section-description,
+  .section-extra {
     color: $font-color-darken;
   }
-  .comments {
+  .section-extra {
     font-family: "FF_Mark_Bold";
   }
   .section-content {
@@ -233,11 +271,8 @@
     }
     align-content: center;
     hr {
-      margin: 1rem;
+      margin: 1rem 0;
       padding: 0;
-    }
-    > * {
-      padding: 1rem 0;
     }
   }
 }

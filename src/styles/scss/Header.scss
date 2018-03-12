@@ -15,7 +15,7 @@
 .logo-alt {
   left: 24px !important;
   top: 16px !important;
-  height: 30px;
+  height: 26px;
 }
 
 
@@ -34,7 +34,7 @@
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: $font-color-dark;
-  height: 3px !important;
+  height: 4px !important;
 }
 
 /* Position and sizing of clickable cross button */
@@ -88,6 +88,8 @@
   a {
     text-decoration: none;
     color: $font-color-light;
+    font-family: "FF_Mark_Regular", "sans serif";
+
   }
 }
 

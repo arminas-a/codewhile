@@ -1,5 +1,9 @@
 @import "Global";
 
+.about-container {
+  margin-bottom: 50px;
+}
+
 @include for-size(phone-only) {
   .about {
     .about-right {

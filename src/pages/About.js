@@ -14,8 +14,8 @@ const About = () => (
     transitionAppearTimeout={500}
     transitionEnter={false}
     transitionLeave={false}
-    className="container"
     component="div"
+    className="about-container"
   >
     <div className="about">
       <div className="about-left">

@@ -1,20 +1,36 @@
 @media (max-width: 599px) {
-  .container, .footer, .section {
+  .home-container,
+  .about-container,
+  .section,
+  .services-intro,
+  .footer {
     margin-left: 1rem;
     margin-right: 1rem; } }
 
 @media (min-width: 600px) {
-  .container, .footer, .section {
+  .home-container,
+  .about-container,
+  .section,
+  .services-intro,
+  .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
 
 @media (min-width: 900px) {
-  .container, .footer, .section {
+  .home-container,
+  .about-container,
+  .section,
+  .services-intro,
+  .footer {
     margin-left: 10rem;
     margin-right: 10rem; } }
 
 @media (min-width: 1200px) {
-  .container, .footer, .section {
+  .home-container,
+  .about-container,
+  .section,
+  .services-intro,
+  .footer {
     margin-left: 20rem;
     margin-right: 20rem; } }
 
@@ -36,7 +52,6 @@
 
 .footer-container {
   border-top: 1px solid #fff;
-  margin-top: 50px;
   background: #323648; }
 
 .footer {
@@ -45,9 +60,11 @@
   color: #323648; }
   .footer h6, .footer p, .footer a {
     color: #fff; }
+  .footer p {
+    font-size: 0.913rem; }
 
 .footer-logo {
-  height: 30px; }
+  height: 20px; }
 
 @media (max-width: 599px) {
   .footer {
