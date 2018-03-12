@@ -2,22 +2,22 @@ import React from "react";
 import "./../../styles/css/Global.css";
 import "./../../styles/css/Elements.css";
 
-const Social = () => (
+const Social = ({ color }) => (
   <div className="social-container">
     <ul className="social-list">
       <li className="social-icon">
         <a href="">
-          <span class="icon-brand" />
+          <span style={{color: color}} class="icon-brand" />
         </a>
       </li>
       <li className="social-icon">
         <a href="">
-          <span class="icon-brand2" />
+          <span style={{color: color}} class="icon-brand2" />
         </a>
       </li>
       <li className="social-icon">
         <a href="">
-          <span class="icon-brand3" />
+          <span style={{color: color}} class="icon-brand3" />
         </a>
       </li>
     </ul>

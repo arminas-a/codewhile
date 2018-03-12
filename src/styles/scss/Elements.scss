@@ -98,6 +98,10 @@
     display: block;
     font-size: 0.913rem;
   }
+  .information-text {
+    margin:0;
+    padding:0;
+  }
 }
 
 // Social
@@ -106,10 +110,14 @@
   .social-list {
     list-style-type: none;
     padding: 0;
+    margin:0;
   }
   .social-icon {
-    display: inline;
-    margin-right: 1rem;
+    display: inline-block;
+    margin:0;
+  }
+  .social-icon:nth-child(even) {
+    padding: 0 1rem;
   }
 }
 
@@ -120,16 +128,26 @@
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 2rem;
-  .link {
+  .sitemap-link {
     display: block;
     font-family: "FF_Mark_Bold", "sans serif";
     font-size: 1.25rem;
   }
-  .sub-link {
+  .sitemap-sublinks-list {
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+  }
+  .sitemap-sublink-item {
+    padding:0;
+    margin:0;
+  }
+  .sitemap-sublink {
     display: block;
     font-size: 0.913rem;
+    margin-bottom: 0.5rem;
   }
-  .sitemap-right {
+  .sitemap-links {
     > * {
       margin-bottom: 1rem;
     }
@@ -139,10 +157,10 @@
   }
   @include for-size(tablet-portrait-up) {
     margin-left: 2rem;
-    .sitemap-left {
+    .sitemap-sublinks-container {
       margin-right: 0.5rem;
     }
-    .sitemap-right {
+    .sitemap-sublinks-container {
       margin-left: 0.5rem;
     }
   }

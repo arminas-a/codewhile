@@ -22,10 +22,8 @@ const Information = () => (
     <a className="information-email" href="">
       info@codewhile.com
     </a>
-    <Social />
+    <Social color={"#fff"}/>
     <p className="information-copyright">© Codewhile, Inc 2013 - 2017. All rights reserved.</p>
-    <a href="/services/#branding">Destination</a>
-
   </div>
 );
 

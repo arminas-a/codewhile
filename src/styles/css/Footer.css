@@ -52,7 +52,8 @@
 
 .footer-container {
   border-top: 1px solid #fff;
-  background: #323648; }
+  background: linear-gradient(45deg, #232532, #323648, #232532);
+  padding-bottom: 50px; }
 
 .footer {
   margin-top: 50px;

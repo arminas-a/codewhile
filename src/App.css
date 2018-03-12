@@ -65,9 +65,11 @@ h5 {
   margin: 0;
 }
 h6,
-.big-link {
+.sitemap-link {
   font-size: 1.15rem;
   margin: 0;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 hr {

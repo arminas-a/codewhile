@@ -3,9 +3,8 @@ import { CSSTransitionGroup } from "react-transition-group";
 import "./../styles/css/Global.css";
 import "./../styles/css/About.css";
 import Breadcrumb from "../components/elements/Breadcrumb";
-import Quote from '../components/elements/Quote';
+import Quote from "../components/elements/Quote";
 import image from "../images/about.svg";
-
 
 const About = () => (
   <CSSTransitionGroup
@@ -18,7 +17,7 @@ const About = () => (
     className="about-container"
   >
     <div className="about">
-      <div className="about-left">
+      <div className="about-content">
         <Breadcrumb title={"Who we are"} />
         <h2>We are an application development agency</h2>
         <p>
@@ -32,10 +31,16 @@ const About = () => (
           From elegant and effective website and rejuvenation of your visual
           identity to an aggressive digital marketing campaign and most reliable
           hosting. We are here to strengthen your positions and beat the
-          competition out of the way.{" "}
+          competition out of the way.
+        </p>{" "}
+        <p>
+          From elegant and effective website and rejuvenation of your visual
+          identity to an aggressive digital marketing campaign and most reliable
+          hosting. We are here to strengthen your positions and beat the
+          competition out of the way.
         </p>
         <h5>We look forward to work with:</h5>
-        <ul className="client-list">
+        <ul className="about-list">
           <li>Small and medium-sized enterprises (SMEs)</li>
           <li>Startups</li>
           <li>Blockchain ventures</li>
@@ -45,8 +50,8 @@ const About = () => (
           <li>Technology companies with outsource needs</li>
         </ul>
       </div>
-      <div className="about-right">
-        <img className="image" src={image} alt=""/>
+      <div className="about-image-container">
+        <img className="about-image" src={image} alt="" />
       </div>
     </div>
   </CSSTransitionGroup>

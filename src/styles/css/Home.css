@@ -50,6 +50,12 @@
   h1 {
     font-size: 4rem; } }
 
+.home-container {
+  margin: 100px 0; }
+  @media (max-width: 599px) {
+    .home-container {
+      margin: 0; } }
+
 .home {
   text-align: center;
   position: relative;

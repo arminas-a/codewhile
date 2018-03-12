@@ -2,7 +2,8 @@
 
 .footer-container {
   border-top: 1px solid $font-color-light;
-  background: $font-color-dark;
+  background: linear-gradient(45deg, #232532, $font-color-dark, #232532);
+  padding-bottom: 50px;
 }
 
 .footer {
