@@ -4,7 +4,7 @@ import "./../styles/css/Footer.css";
 import Social from "./elements/Social";
 import Sitemap from './elements/Sitemap';
 import Information from './elements/Information';
-import services from "../data/data";
+import services from "../data/services";
 
 const sublinks = services.map(service => {
   return service.heading;

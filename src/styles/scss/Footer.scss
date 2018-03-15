@@ -1,7 +1,7 @@
 @import "Global";
 
 .footer-container {
-  border-top: 1px solid $font-color-light;
+  border-top: 1px solid transparent;
   background: linear-gradient(45deg, #232532, $font-color-dark, #232532);
   padding-bottom: 50px;
 }

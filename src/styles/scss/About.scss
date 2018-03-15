@@ -2,6 +2,21 @@
 
 .about-container {
   margin-bottom: 50px;
+  margin-top: 50px;
+
+}
+
+.about-image-container {
+  width: 50%;
+  text-align: center;
+  @include for-size(phone-only) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .about-image {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @include for-size(phone-only) {
@@ -9,11 +24,7 @@
     .about-content {
       margin-top: 2rem;
       display: block;
-      .about-image-container {
-        .about-image {
-          max-width: 100%;
-        }
-      }
+      width: 100%;
     }
   }
 }
@@ -26,16 +37,9 @@
       width: 50%;
       margin-right: 1rem;
     }
-    .about-image-container {
-      width: 50%;
-      margin-left: 1rem;
-      .about-image {
-        width: 100%;
-        height: auto;
-      }
-    }
   }
 }
+
 @include for-size(tablet-landscape-up) {
 }
 @include for-size(desktop-up) {

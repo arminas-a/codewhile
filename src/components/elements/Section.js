@@ -2,8 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import { string } from "prop-types";
 import "./../../styles/css/Elements.css";
-import { ScrollIntoView } from 'rrc'
-
+import { ScrollIntoView } from 'rrc';
 
 const Section = ({ image, heading, description, comments }) => (
   <div className="section-container" >
@@ -19,7 +18,6 @@ const Section = ({ image, heading, description, comments }) => (
       </div>
     </div>
   </div>
-
 );
 
 Section.propTypes = {

@@ -1,6 +1,7 @@
 @media (max-width: 599px) {
   .home-container,
   .about-container,
+  .career-container,
   .section,
   .services-intro,
   .footer {
@@ -10,6 +11,7 @@
 @media (min-width: 600px) {
   .home-container,
   .about-container,
+  .career-container,
   .section,
   .services-intro,
   .footer {
@@ -19,15 +21,17 @@
 @media (min-width: 900px) {
   .home-container,
   .about-container,
+  .career-container,
   .section,
   .services-intro,
   .footer {
-    margin-left: 10rem;
-    margin-right: 10rem; } }
+    margin-left: 5rem;
+    margin-right: 5rem; } }
 
 @media (min-width: 1200px) {
   .home-container,
   .about-container,
+  .career-container,
   .section,
   .services-intro,
   .footer {
@@ -52,18 +56,22 @@
 
 .services-intro-title {
   font-size: 56px;
-  display: block; }
+  display: block;
+  color: #fff; }
   @media (max-width: 599px) {
     .services-intro-title {
       font-size: 28px; } }
 
 .services-intro-description {
   font-size: 1.15rem; }
-  @media (min-width: 900px) {
-    .services-intro-description {
-      width: 50%; } }
 
 .services-intro {
   display: flex;
   flex-direction: row;
   align-items: center; }
+  .services-intro h6 {
+    color: #fff; }
+
+.services-container {
+  background: linear-gradient(to right, #ff6a00, #ffaa00, #ff6a00);
+  padding-top: 50px; }

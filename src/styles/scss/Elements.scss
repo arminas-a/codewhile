@@ -5,6 +5,7 @@
 .breadcrumb {
   h6 {
     color: $brand-color-one;
+    font-family: "FF_Mark_Bold", sans-serif;
   }
 }
 
@@ -29,56 +30,48 @@
   transition: 0.5s;
 }
 
-// Quote
+// Card
 
-.quote-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+.card-container {
+  background: #fff;
   border-radius: 2px;
-  > * {
-    margin: 1.25rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-around;
+  @include for-size(phone-only) {
+    display: block;
+    .card-icon-container {
+      padding-top: 1rem;
+    }
   }
-  .quote-number,
-  .quote-text {
-    color: $font-color-light;
+  .card-icon-container {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    .card-icon {
+      width: 120px;
+    }
+  }
+
+  .card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    .card-heading {
+      margin-bottom: 1rem;
+    }
+    .card-description {
+      margin: 0;
+    }
   }
 }
 
-.quote-container {
-  @include for-size(phone-only) {
-    .quote-number {
-      font-size: 2rem;
-    }
-    .quote-text {
-      font-size: 0.875rem;
-    }
-  }
-  @include for-size(tablet-portrait-up) {
-    .quote-number {
-      font-size: 2rem;
-    }
-    .quote-text {
-      font-size: 0.75rem;
-    }
-  }
-  @include for-size(tablet-landscape-up) {
-    .quote-number {
-      font-size: 3rem;
-    }
-    .quote-text {
-      font-size: 0.875rem;
-    }
-  }
-  @include for-size(desktop-up) {
-    height: 150px;
-    .quote-number {
-      font-size: 4rem;
-    }
-    .quote-text {
-      font-size: 1.15rem;
-    }
-  }
+.card-row {
+  display: block;
+  margin-bottom: 2rem;
 }
 
 // Information
@@ -99,9 +92,12 @@
     font-size: 0.913rem;
   }
   .information-text {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
   }
+}
+.information-email:hover {
+  opacity: 0.75;
 }
 
 // Social
@@ -110,15 +106,19 @@
   .social-list {
     list-style-type: none;
     padding: 0;
-    margin:0;
+    margin: 0;
   }
   .social-icon {
     display: inline-block;
-    margin:0;
+    margin: 0;
   }
   .social-icon:nth-child(even) {
     padding: 0 1rem;
   }
+}
+
+.social-icon:hover {
+  opacity: 0.75;
 }
 
 // Sitemap
@@ -135,12 +135,15 @@
   }
   .sitemap-sublinks-list {
     padding: 0;
-    margin:0;
+    margin: 0;
     list-style-type: none;
   }
   .sitemap-sublink-item {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
+    :hover {
+      opacity: 0.75;
+    }
   }
   .sitemap-sublink {
     display: block;
@@ -164,6 +167,9 @@
       margin-left: 0.5rem;
     }
   }
+}
+.sitemap-link:hover {
+  opacity: 0.75;
 }
 
 //Section

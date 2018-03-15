@@ -3,20 +3,27 @@
 .services-intro-title {
   font-size: 56px;
   display: block;
+  color: #fff;
   @include for-size(phone-only) {
     font-size: 28px;
   }
 }
 .services-intro-description{
     font-size: 1.15rem;
-    @include for-size(tablet-landscape-up) {
-        width: 50%;
-    }
 }
 
 .services-intro {
     display: flex;
     flex-direction: row;
     align-items: center;
+    h6 {
+        color: #fff;
+    }
 
 }
+
+.services-container {
+    background: linear-gradient(to right, #ff6a00, #ffaa00, #ff6a00);
+    padding-top: 50px;
+}
+

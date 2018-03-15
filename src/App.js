@@ -16,22 +16,24 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import Career from './pages/Career';
 
-import ScrollToTop from "./components/elements/ScrollToTop";
+
+import AdaptiveHeader from './components/AdaptiveHeader';
 
 const menuList = ["About", "Services", "Career", "Contact"];
 
 const App = () => (
-  <BrowserRouter basename={process.env.PUBLIC_URL} onUpdate={() => window.scrollIntoView()}>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div className="App">
-      <Header elements={menuList} />
-      <ScrollToTop>
+      <AdaptiveHeader elements={menuList}/>
         <Route exact path="/" component={Home} />
         <Route path="/services" component={Services} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-      </ScrollToTop>
-      <Footer links={menuList} />
+        <Route path="/career" component={Career} />
+
+      <Footer/>
     </div>
   </BrowserRouter>
 );

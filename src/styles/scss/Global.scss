@@ -38,6 +38,7 @@ $brand-color-two: #9013fe;
 // usage
 .home-container,
 .about-container,
+.career-container,
 .section,
 .services-intro,
 .footer {
@@ -50,8 +51,8 @@ $brand-color-two: #9013fe;
         margin-right: 5rem;
     }
     @include for-size(tablet-landscape-up) {
-        margin-left: 10rem;
-        margin-right: 10rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
     @include for-size(desktop-up) {
         margin-left: 20rem;

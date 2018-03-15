@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/css/Global.css";
 import "../../styles/css/Elements.css";
-import logo_light from "../../images/logo_light.svg";
+import logo_light from "../../images/logo_light2.svg";
 import Social from './Social';
 
 

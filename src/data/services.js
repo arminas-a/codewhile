@@ -1,3 +1,4 @@
+//service images
 import technology_consulting from "../images/icons/technology_consulting.svg";
 import application_development from "../images/icons/application_development.svg";
 import web_design from "../images/icons/web_design.svg";
@@ -6,6 +7,11 @@ import social_media_advertising from "../images/icons/social_media_advertising.s
 import software_prototyping from "../images/icons/software_prototyping.svg";
 import branding from "../images/icons/branding.svg";
 import outsourcing from "../images/icons/outsourcing.svg";
+
+// job images
+import frontend_engineer from "../images/icons/frontend_engineer.svg";
+import backend_engineer from "../images/icons/backend_engineer.svg";
+
 
 const services = [
   {
