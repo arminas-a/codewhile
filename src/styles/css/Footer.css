@@ -2,7 +2,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
+  .section-wrapper,
   .services-intro,
   .footer {
     margin-left: 1rem;
@@ -12,7 +12,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
+  .section-wrapper,
   .services-intro,
   .footer {
     margin-left: 5rem;
@@ -22,7 +22,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
+  .section-wrapper,
   .services-intro,
   .footer {
     margin-left: 5rem;
@@ -32,7 +32,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
+  .section-wrapper,
   .services-intro,
   .footer {
     margin-left: 20rem;
@@ -55,8 +55,7 @@
     font-size: 4rem; } }
 
 .footer-container {
-  border-top: 1px solid transparent;
-  background: linear-gradient(45deg, #232532, #323648, #232532);
+  border-top: 1px solid #f1f1f1;
   padding-bottom: 50px; }
 
 .footer {
@@ -64,7 +63,7 @@
   display: flex;
   color: #323648; }
   .footer h6, .footer p, .footer a {
-    color: #fff; }
+    color: #323648; }
   .footer p {
     font-size: 0.913rem; }
 

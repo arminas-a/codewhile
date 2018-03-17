@@ -7,7 +7,7 @@ import image from "../images/about.svg";
 
 class About extends React.Component {
   componentDidMount() {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
   render() {
     return (
@@ -22,8 +22,7 @@ class About extends React.Component {
       >
         <div className="about">
           <div className="about-content">
-            <Breadcrumb title={"Who we are"} />
-            <h2>We are an application development agency</h2>
+            <Breadcrumb title={"01. Who we are"} />
             <p>
               We are a team of web designers and programmers dedicated to create
               best products for our clients. Our focus is to find an original
@@ -43,7 +42,8 @@ class About extends React.Component {
               reliable hosting. We are here to strengthen your positions and
               beat the competition out of the way.
             </p>
-            <h5>We look forward to work with:</h5>
+            <br />
+            <h5 className="about-title">We look forward to work with:</h5>
             <ul className="about-list">
               <li>Small and medium-sized enterprises (SMEs)</li>
               <li>Startups</li>
@@ -52,6 +52,10 @@ class About extends React.Component {
               <li>Designers</li>
               <li>Creative individuals</li>
               <li>Technology companies with outsource needs</li>
+            </ul>
+            <h5 className="about-title">Tools & Expertise:</h5>
+            <ul className="expertise-list">
+              <li className="expertise-item" />
             </ul>
           </div>
           <div className="about-image-container">

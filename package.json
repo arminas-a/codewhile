@@ -12,6 +12,7 @@
     "react-dom": "^16.2.0",
     "react-form": "^2.16.1",
     "react-instafeed": "^0.4.0",
+    "react-particles-js": "^2.1.1",
     "react-router-dom": "^4.2.2",
     "react-router-hash-link": "^1.2.0",
     "react-scripts": "1.0.17",

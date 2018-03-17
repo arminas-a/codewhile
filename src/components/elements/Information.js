@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/css/Global.css";
 import "../../styles/css/Elements.css";
-import logo_light from "../../images/logo_light2.svg";
+import logo_dark from "../../images/logo_dark2.svg";
 import Social from './Social';
 
 
@@ -18,11 +18,11 @@ const Information = () => (
       cum! Ad, aperiam aut.
     </p>
     <hr />
-    <img className="footer-logo" src={logo_light} alt="" />
+    <img className="footer-logo" src={logo_dark} alt="" />
     <a className="information-email" href="">
       info@codewhile.com
     </a>
-    <Social color={"#fff"}/>
+    <Social color={"#000"}/>
     <p className="information-copyright">© Codewhile, Inc 2013 - 2017. All rights reserved.</p>
   </div>
 );

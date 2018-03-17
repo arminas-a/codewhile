@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { array } from "prop-types";
-import logo_light from "../../images/logo_light2.svg";
+import logo_light from "../../images/logo_dark2.svg";
 
 const HeaderDesktop = ({ elements }) => (
     <div className="header-desktop-container">

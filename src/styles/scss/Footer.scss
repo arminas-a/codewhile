@@ -1,8 +1,7 @@
 @import "Global";
 
 .footer-container {
-  border-top: 1px solid transparent;
-  background: linear-gradient(45deg, #232532, $font-color-dark, #232532);
+  border-top: 1px solid #f1f1f1;
   padding-bottom: 50px;
 }
 
@@ -11,7 +10,7 @@
   display: flex;
   color: $font-color-dark;
   h6, p, a {
-    color: $font-color-light;
+    color: $font-color-dark;
   }
   p {
     font-size: 0.913rem;

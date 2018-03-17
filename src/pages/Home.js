@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { CSSTransitionGroup } from "react-transition-group";
 import "./../styles/css/Global.css";
 import "./../styles/css/Home.css";
-import image from "./../images/home.svg";
+import image from "./../images/home6.svg";
 import Button from "../components/elements/Button";
 
 const Home = () => (
@@ -14,12 +14,12 @@ const Home = () => (
     transitionEnter={false}
     transitionLeave={false}
     component="div"
-    className="home-container"
+    className="home-page"
   >
-    <div className="home">
+    <div className="home-container">
     <div className="call-to-action-container">
         <div className="call-to-action">
-          <h1>Advanced application development solutions</h1>
+          <h1>Advanced application development and user experience solutions.</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem iure
             explicabo harum fugit praesentium! Aliquid asperiores consequatur
@@ -29,8 +29,10 @@ const Home = () => (
         </div>
       </div>
       <img className="image-container" src={image} alt="" />
+
     </div>
   </CSSTransitionGroup>
+  
 );
 
 export default Home;

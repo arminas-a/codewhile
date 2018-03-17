@@ -2,7 +2,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
+  .section-wrapper,
   .services-intro,
   .footer {
     margin-left: 1rem;
@@ -12,7 +12,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
+  .section-wrapper,
   .services-intro,
   .footer {
     margin-left: 5rem;
@@ -22,7 +22,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
+  .section-wrapper,
   .services-intro,
   .footer {
     margin-left: 5rem;
@@ -32,7 +32,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
+  .section-wrapper,
   .services-intro,
   .footer {
     margin-left: 20rem;
@@ -54,24 +54,21 @@
   h1 {
     font-size: 4rem; } }
 
-.home-container {
-  margin: 100px 0; }
-  @media (max-width: 599px) {
-    .home-container {
-      margin: 0; } }
+@media (max-width: 599px) {
+  .home {
+    margin: 0; } }
 
-.home {
+.home-container {
   text-align: center;
   position: relative;
-  margin-bottom: 50px; }
-  .home h1 {
+  margin: 50px 0; }
+  .home-container h1 {
     color: #323648; }
-  .home p {
+  .home-container p {
     color: #5B5E6D; }
 
 .call-to-action-container {
-  background-color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 50px; }
+  background-color: rgba(255, 255, 255, 0.8); }
   .call-to-action-container .call-to-action {
     vertical-align: middle;
     display: flex;
@@ -105,9 +102,7 @@
 .image-container {
   width: 100%;
   height: auto;
-  display: absolute;
-  margin-left: -15%;
-  margin-right: -15%; }
+  margin-top: 50px; }
 
 .example-appear {
   opacity: 0.01; }

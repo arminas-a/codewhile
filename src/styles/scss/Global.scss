@@ -39,7 +39,7 @@ $brand-color-two: #9013fe;
 .home-container,
 .about-container,
 .career-container,
-.section,
+.section-wrapper,
 .services-intro,
 .footer {
     @include for-size(phone-only) {

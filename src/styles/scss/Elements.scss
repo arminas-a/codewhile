@@ -3,9 +3,11 @@
 // Breadcrumb
 
 .breadcrumb {
-  h6 {
+  margin-bottom: 150px;
+  .breadcrumb-title {
     color: $brand-color-one;
     font-family: "FF_Mark_Bold", sans-serif;
+    font-size: 3rem;
   }
 }
 
@@ -174,100 +176,12 @@
 
 //Section
 
-.section-container {
-  height: auto;
-}
-
-.section-container:nth-child(odd) {
-  .section-image {
-    margin-right: 1rem;
-    @include for-size(phone-only) {
-      margin-right: 0rem;
-    }
-  }
-  .section-content {
-    margin-left: 1rem;
-    @include for-size(phone-only) {
-      margin-left: 0rem;
-    }
-  }
-}
-
-.section-container {
-  @include for-size(phone-only) {
-    .section-image {
-      margin-bottom: 1rem;
-    }
-    .section-content {
-      margin-top: 1rem;
-    }
-  }
-}
-
-.section-container:nth-child(even) {
-  .section-image {
-    margin-left: 1rem;
-    @include for-size(phone-only) {
-      margin-left: 0rem;
-    }
-  }
-  .section-content {
-    margin-right: 1rem;
-    @include for-size(phone-only) {
-      margin-right: 0rem;
-    }
-  }
-}
-
-.section-container:nth-child(1n) {
-  background: #f5f5f5;
-}
-
-.section-container:nth-child(2n) {
-  background: #fff;
-  .section {
-    flex-direction: row-reverse;
-  }
-}
-
-.section-container:nth-child(3n) {
-  background: $font-color-dark;
-  .section-header,
-  .section-description,
-  .section-extra {
-    color: $font-color-light;
-  }
-}
-
-.section-container:last-child {
-  background: #f5f5f5;
-  .section {
-    .section-header {
-      color: $font-color-dark;
-    }
-    .section-header,
-    .section-description,
-    .section-extra {
-      color: $font-color-darken;
-    }
-  }
-}
-
 .section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 5rem 0;
-  @include for-size(phone-only) {
-    display: block;
-    padding: 5rem 0;
-  }
+  display: block;
   .section-image {
-    vertical-align: center;
+    margin-bottom: 1rem;
     img {
-      width: 100%;
-      max-height: 400px;
-      height: auto;
+      height: 60px;
     }
   }
 
@@ -289,7 +203,6 @@
     font-family: "FF_Mark_Bold";
   }
   .section-content {
-    width: 50%;
     @include for-size(phone-only) {
       width: 100%;
     }

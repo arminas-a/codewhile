@@ -6,13 +6,13 @@ import Section from "../components/elements/Section";
 import services from "../data/services";
 import Breadcrumb from "../components/elements/Breadcrumb";
 import coding from "../images/coding.png";
-import Subheader from '../components/elements/Subheader';
+import Subheader from "../components/elements/Subheader";
 
-const sublinks = ['1', '2', '3'];
+const sublinks = ["1", "2", "3"];
 
 class Services extends React.Component {
   componentDidMount() {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
   render() {
     let servicesGrid = services.map(service => {
@@ -38,14 +38,12 @@ class Services extends React.Component {
       >
         <div className="services-intro">
           <div className="services-intro-content">
-            <Breadcrumb title={"What we do"} />
-            <h2 className="services-intro-title">
-              We provide digital presence services to businesses, ventures and
-              individuals.
-            </h2>
+            <Breadcrumb title={"02. What we do"} />
           </div>
         </div>
-        {servicesGrid}
+        <div className="section-wrapper">
+          <div className="services-grid-container">{servicesGrid}</div>
+        </div>
       </CSSTransitionGroup>
     );
   }

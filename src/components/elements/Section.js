@@ -2,13 +2,17 @@ import React from "react";
 import { Route } from "react-router-dom";
 import { string } from "prop-types";
 import "./../../styles/css/Elements.css";
-import { ScrollIntoView } from 'rrc';
+import { ScrollIntoView } from "rrc";
 
 const Section = ({ image, heading, description, comments }) => (
-  <div className="section-container" >
-    <div className={`section ${heading.replace(" ", "-").toLowerCase()}`} >
-      <div className="section-image" >
-        <img src={image} alt={heading} id={heading.replace(" ", "-").toLowerCase()}/>
+  <div className="section-container">
+    <div className={`section ${heading.replace(" ", "-").toLowerCase()}`}>
+      <div className="section-image">
+        <img
+          src={image}
+          alt={heading}
+          id={heading.replace(" ", "-").toLowerCase()}
+        />
       </div>
       <div className="section-content">
         <h6 className="section-header">{heading}</h6>

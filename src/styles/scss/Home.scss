@@ -1,17 +1,16 @@
 @import "Global";
 
 // Desktop
-.home-container {
-  margin: 100px 0;
+.home {
   @include for-size(phone-only) {
     margin:0;
 }
 }
 
-.home {
+.home-container {
   text-align: center;
   position: relative;
-  margin-bottom: 50px;
+  margin: 50px 0;
   h1 {
     color: $font-color-dark;
   }
@@ -22,7 +21,6 @@
 
 .call-to-action-container {
   background-color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 50px;
   .call-to-action {
     vertical-align: middle;
     display: flex;
@@ -71,9 +69,7 @@
 .image-container {
   width: 100%;
   height: auto;
-  display: absolute;
-  margin-left: -15%;
-  margin-right: -15%;
+  margin-top: 50px;
 }
 
 // Animations
