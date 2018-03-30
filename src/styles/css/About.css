@@ -2,8 +2,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 1rem;
     margin-right: 1rem; } }
@@ -12,8 +11,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -22,8 +20,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -32,8 +29,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 20rem;
     margin-right: 20rem; } }
@@ -55,19 +51,27 @@
     font-size: 4rem; } }
 
 .about-container {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   margin-top: 50px; }
 
+.about-list {
+  padding: 0;
+  padding-left: 1rem; }
+
 .about-title {
-  margin-top: 50px; }
+  margin-bottom: 2rem; }
 
 .expertise-list {
   list-style-type: none;
   padding: 0;
   margin: 0; }
 
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px; }
+
 .about-image-container {
-  width: 50%;
   text-align: center;
   margin-left: 1rem; }
   @media (max-width: 599px) {
@@ -92,5 +96,29 @@
     flex-direction: row;
     justify-content: space-between; }
     .about .about-content {
-      width: 50%;
       margin-right: 1rem; } }
+
+.expertise-title {
+  font-size: 32px;
+  margin-bottom: 50px; }
+
+.expertise-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-gap: 50px; }
+  @media (min-width: 600px) {
+    .expertise-list {
+      grid-template-columns: repeat(auto-fill, 150px);
+      grid-gap: 50px; } }
+  @media (max-width: 599px) {
+    .expertise-list {
+      grid-template-columns: repeat(auto-fill, 100px);
+      grid-gap: 100px; } }
+  .expertise-list .expertise-item {
+    display: flex;
+    align-items: center;
+    font-weight: 700; }
+    .expertise-list .expertise-item img {
+      height: 32px;
+      width: 32px;
+      margin-right: 0.5rem; }

@@ -2,8 +2,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 1rem;
     margin-right: 1rem; } }
@@ -12,8 +11,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -22,8 +20,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -32,8 +29,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 20rem;
     margin-right: 20rem; } }

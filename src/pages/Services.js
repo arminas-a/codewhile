@@ -1,14 +1,13 @@
 import React from "react";
 import { CSSTransitionGroup } from "react-transition-group";
+import { HashLink as Link } from "react-router-hash-link";
 import "./../styles/css/Global.css";
 import "./../styles/css/Services.css";
 import Section from "../components/elements/Section";
 import services from "../data/services";
 import Breadcrumb from "../components/elements/Breadcrumb";
-import coding from "../images/coding.png";
 import Subheader from "../components/elements/Subheader";
-
-const sublinks = ["1", "2", "3"];
+import Sitemap from "../components/elements/Sitemap";
 
 class Services extends React.Component {
   componentDidMount() {
@@ -26,6 +25,21 @@ class Services extends React.Component {
         />
       );
     });
+    let servicesLinks = services.map(service => {
+      return (
+        <li className="services-intro-link">
+          <Link className="services-intro-link-anchor"
+            scroll={el => el.scrollIntoView(true)}
+            to={`services#${service.heading.toLowerCase().replace(" ", "-")}`}
+          >
+            {" "}
+            {service.heading}
+          </Link>
+          <hr className="services-intro-link-hr"/>
+        </li>
+        
+      );
+    });
     return (
       <CSSTransitionGroup
         transitionName="example"
@@ -39,6 +53,9 @@ class Services extends React.Component {
         <div className="services-intro">
           <div className="services-intro-content">
             <Breadcrumb title={"02. What we do"} />
+            <div className="services-intro-link-container">
+              <ul className="services-intro-link-list">{servicesLinks}</ul>
+            </div>
           </div>
         </div>
         <div className="section-wrapper">

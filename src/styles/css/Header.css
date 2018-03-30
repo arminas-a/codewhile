@@ -2,8 +2,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 1rem;
     margin-right: 1rem; } }
@@ -12,8 +11,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -22,8 +20,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -32,8 +29,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 20rem;
     margin-right: 20rem; } }
@@ -57,9 +53,12 @@
 .header-container {
   height: 80px;
   border-bottom: 1px solid #f1f1f1;
-  background: #fff; }
+  background: linear-gradient(135deg, #232532, #323648, #232532); }
   .header-container .header-mobile-anchor {
     display: inline-block !important; }
+
+.header {
+  border-bottom: 1px solid #f1f1f1; }
 
 .header-desktop-nav {
   position: absolute;
@@ -76,8 +75,6 @@
     margin-left: 1.5rem; }
     .header-desktop-nav .header-desktop-menu-item :hover {
       opacity: 0.75; }
-    .header-desktop-nav .header-desktop-menu-item .header-desktop-menu-link {
-      color: #000; }
 
 .header-desktop-logo {
   position: absolute;
@@ -114,7 +111,7 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #323648;
+  background: #fff;
   height: 4px !important; }
 
 /* Position and sizing of clickable cross button */
@@ -164,7 +161,7 @@
   margin: 1rem 0; }
 
 .header-mobile-copyright {
-  font-sizE: 0.913rem; }
+  font-size: 0.913rem; }
 
 /* Styling of overlay */
 .bm-overlay {
@@ -184,17 +181,20 @@
 @media (min-width: 600px) {
   .header-desktop-logo {
     left: 5rem; }
-  .bm-burger-button {
+  .bm-burger-button,
+  .header-desktop-nav {
     right: 5rem; } }
 
 @media (min-width: 900px) {
   .header-desktop-logo {
     left: 5rem; }
-  .bm-burger-button, .header-desktop-nav {
+  .bm-burger-button,
+  .header-desktop-nav {
     right: 5rem; } }
 
 @media (min-width: 1200px) {
   .header-desktop-logo {
     left: 20rem; }
-  .bm-burger-button, .header-desktop-nav {
+  .bm-burger-button,
+  .header-desktop-nav {
     right: 20rem; } }

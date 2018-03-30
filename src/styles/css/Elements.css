@@ -2,8 +2,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 1rem;
     margin-right: 1rem; } }
@@ -12,8 +11,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -22,8 +20,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -32,8 +29,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 20rem;
     margin-right: 20rem; } }
@@ -58,8 +54,13 @@
   margin-bottom: 150px; }
   .breadcrumb .breadcrumb-title {
     color: #FF6A00;
-    font-family: "FF_Mark_Bold", sans-serif;
+    font-family: "URWDock_Bold", sans-serif;
     font-size: 3rem; }
+  @media (max-width: 599px) {
+    .breadcrumb {
+      margin-bottom: 50px; }
+      .breadcrumb .breadcrumb-title {
+        font-size: 1.5rem; } }
 
 .Button {
   border: 2px solid #FF6A00;
@@ -179,6 +180,8 @@
       margin-left: 2rem; }
       .sitemap-container .sitemap-sublinks-container {
         margin-right: 0.5rem; }
+      .sitemap-container .sitemap-links {
+        margin-left: 0.5rem; }
       .sitemap-container .sitemap-sublinks-container {
         margin-left: 0.5rem; } }
 
@@ -186,13 +189,12 @@
   opacity: 0.75; }
 
 .section {
-  display: block; }
+  display: block;
+  margin-bottom: 100px; }
   .section .section-image {
     margin-bottom: 1rem; }
     .section .section-image img {
       height: 60px; }
-  .section > * {
-    flex: 1; }
   .section .section-header {
     color: #323648;
     font-size: 28px; }

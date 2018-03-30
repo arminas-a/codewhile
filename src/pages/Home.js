@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { CSSTransitionGroup } from "react-transition-group";
 import "./../styles/css/Global.css";
 import "./../styles/css/Home.css";
-import image from "./../images/home6.svg";
+import image from "./../images/home2.svg";
 import Button from "../components/elements/Button";
 
 const Home = () => (

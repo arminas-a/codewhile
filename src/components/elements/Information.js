@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/css/Global.css";
 import "../../styles/css/Elements.css";
-import logo_dark from "../../images/logo_dark2.svg";
+import logo_dark from "../../images/logo_light2.svg";
 import Social from './Social';
 
 
@@ -22,7 +22,7 @@ const Information = () => (
     <a className="information-email" href="">
       info@codewhile.com
     </a>
-    <Social color={"#000"}/>
+    <Social color={"#fff"}/>
     <p className="information-copyright">© Codewhile, Inc 2013 - 2017. All rights reserved.</p>
   </div>
 );

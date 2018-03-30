@@ -3,14 +3,15 @@
 .footer-container {
   border-top: 1px solid #f1f1f1;
   padding-bottom: 50px;
+  background: linear-gradient(135deg,#232532,#323648,#232532);
 }
 
 .footer {
   margin-top: 50px;
   display: flex;
-  color: $font-color-dark;
+  color: $font-color-light;
   h6, p, a {
-    color: $font-color-dark;
+    color: $font-color-light;
   }
   p {
     font-size: 0.913rem;

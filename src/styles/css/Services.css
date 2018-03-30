@@ -2,8 +2,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 1rem;
     margin-right: 1rem; } }
@@ -12,8 +11,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -22,8 +20,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -32,8 +29,7 @@
   .home-container,
   .about-container,
   .career-container,
-  .section-wrapper,
-  .services-intro,
+  .services-container,
   .footer {
     margin-left: 20rem;
     margin-right: 20rem; } }
@@ -70,13 +66,19 @@
   align-items: center; }
 
 .services-container {
-  padding-top: 50px; }
-
-.services-intro-description {
-  width: 50%; }
-
-.services-grid-container {
+  padding-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 100px;
-  margin-bottom: 100px; }
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  align-items: flex-start; }
+
+.services-intro-link-container {
+  border-radius: 2px; }
+
+.services-intro-link-list {
+  list-style-type: none;
+  padding: 0; }
+  .services-intro-link-list .services-intro-link {
+    margin-bottom: 1rem; }
+    .services-intro-link-list .services-intro-link .services-intro-link-hr {
+      margin: 1rem 0; }

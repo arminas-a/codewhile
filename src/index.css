@@ -31,6 +31,12 @@
   src: url("./fonts/Cochin.ttc");
 }
 
+@font-face {
+  font-family: "URWDock_Bold";
+  src: url("./fonts/URWDock_Bold.ttf");
+}
+
+
 
 
 [class^="icon-"],
