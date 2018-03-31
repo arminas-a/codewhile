@@ -7,13 +7,11 @@ import { ScrollIntoView } from "rrc";
 const Section = ({ image, heading, description, comments }) => (
   <div className="section-container">
     <div className={`section ${heading.replace(" ", "-").toLowerCase()}`}>
-      <div className="section-image">
-        <img
-          src={image}
-          alt={heading}
-          id={heading.replace(" ", "-").toLowerCase()}
-        />
-      </div>
+      <div
+        className="section-image"
+        style={{ backgroundImage: `url(${image})`}}
+        id={heading.replace(" ", "-").toLowerCase()}
+      />
       <div className="section-content">
         <h6 className="section-header">{heading}</h6>
         <p className="section-description">{description}</p>
@@ -32,3 +30,9 @@ Section.propTypes = {
 };
 
 export default Section;
+
+// <img
+// src={image}
+// alt={heading}
+// id={heading.replace(" ", "-").toLowerCase()}
+// />

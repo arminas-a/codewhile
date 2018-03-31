@@ -2,15 +2,13 @@
 
 .header-container {
   height: 80px;
-  border-bottom: 1px solid #f1f1f1;
-  background: linear-gradient(135deg,#232532,#323648,#232532);
-    .header-mobile-anchor {
+  border-bottom: 1px solid #434343;
+
+
+  background: $gradient;
+  .header-mobile-anchor {
     display: inline-block !important;
   }
-}
-
-.header {
-  border-bottom: 1px solid #f1f1f1;
 }
 
 .header-desktop-nav {
@@ -28,9 +26,8 @@
   .header-desktop-menu-item {
     margin-left: 1.5rem;
     :hover {
-      opacity: 0.75;
+      opacity: 0.5;
     }
-
   }
 }
 
@@ -52,6 +49,7 @@
 }
 
 .header {
+
   @include for-size(phone-only) {
     position: fixed;
     background: inherit;
@@ -88,8 +86,14 @@
   }
 }
 
+.header-desktop-menu-item {
+  a {
+  font-weight: 600;
+  }
+}
+
 .header-mobile-menu-link {
-  font-size: 1.15rem;
+  font-weight: 900;
 }
 
 .header-mobile-email {
@@ -130,7 +134,6 @@
   a {
     text-decoration: none;
     color: $font-color-dark;
-    font-family: "FF_Mark_Regular", "sans serif";
   }
 }
 

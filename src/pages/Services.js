@@ -35,7 +35,6 @@ class Services extends React.Component {
             {" "}
             {service.heading}
           </Link>
-          <hr className="services-intro-link-hr"/>
         </li>
         
       );
@@ -50,9 +49,10 @@ class Services extends React.Component {
         component="div"
         className="services-container"
       >
+      <Breadcrumb title={"02. What we do"} />
+      <div className="services-wrapper">
         <div className="services-intro">
           <div className="services-intro-content">
-            <Breadcrumb title={"02. What we do"} />
             <div className="services-intro-link-container">
               <ul className="services-intro-link-list">{servicesLinks}</ul>
             </div>
@@ -60,6 +60,7 @@ class Services extends React.Component {
         </div>
         <div className="section-wrapper">
           <div className="services-grid-container">{servicesGrid}</div>
+        </div>
         </div>
       </CSSTransitionGroup>
     );

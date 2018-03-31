@@ -12,17 +12,20 @@
 }
 
 .services-intro {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: block;
+
+  margin-bottom: 50px;
 }
 
-.services-container {
-  padding-top: 50px;
+.services-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.5fr 1.5fr;
   grid-gap: 50px;
   align-items: flex-start;
+  @include for-size(phone-only) {
+    display: block;
+
+  }
 }
 
 .services-intro-link-container {
@@ -32,13 +35,26 @@
 .services-intro-link-list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   .services-intro-link {
     margin-bottom: 1rem;
-    .services-intro-link-hr {
-      margin: 1rem 0;
+    border-bottom: 1px solid #ebebeb;
+    padding: 1rem 0;
+    :hover {
+      color: $brand-color-one;
     }
+
   }
 }
+
+// .tip {
+//   background: $brand-color-one;
+//   padding: 1rem;
+//   text-align: center;
+//   .tip-heading {
+//     color: #fff;
+//   }
+// }
 
 // @include for-size(phone-only) {
 //     display: block;

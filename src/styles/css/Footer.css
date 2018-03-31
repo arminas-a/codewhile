@@ -1,17 +1,19 @@
-@media (max-width: 599px) {
+@media (max-width: 799px) {
   .home-container,
   .about-container,
   .career-container,
   .services-container,
+  .contact-container,
   .footer {
     margin-left: 1rem;
     margin-right: 1rem; } }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .home-container,
   .about-container,
   .career-container,
   .services-container,
+  .contact-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -21,6 +23,7 @@
   .about-container,
   .career-container,
   .services-container,
+  .contact-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -30,15 +33,16 @@
   .about-container,
   .career-container,
   .services-container,
+  .contact-container,
   .footer {
     margin-left: 20rem;
     margin-right: 20rem; } }
 
-@media (max-width: 599px) {
+@media (max-width: 799px) {
   h1 {
     font-size: 2rem; } }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   h1 {
     font-size: 2.5rem; } }
 
@@ -51,12 +55,12 @@
     font-size: 4rem; } }
 
 .footer-container {
-  border-top: 1px solid #f1f1f1;
   padding-bottom: 50px;
-  background: linear-gradient(135deg, #232532, #323648, #232532); }
+  padding-top: 50px;
+  background: linear-gradient(to right, #000, #18191c, #000);
+  border-top: 1px solid #434343; }
 
 .footer {
-  margin-top: 50px;
   display: flex;
   color: #fff; }
   .footer h6, .footer p, .footer a {
@@ -67,7 +71,7 @@
 .footer-logo {
   height: 20px; }
 
-@media (max-width: 599px) {
+@media (max-width: 799px) {
   .footer {
     flex-direction: column-reverse; }
     .footer .footer-left {
@@ -75,7 +79,7 @@
     .footer .footer-right {
       width: 100%; } }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .footer .footer-left {
     width: 50%; }
   .footer .footer-right {

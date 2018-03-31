@@ -21,10 +21,12 @@ class About extends React.Component {
         component="div"
         className="about-container"
       >
+        <Breadcrumb title={"01. Who we are"} />
+
         <div className="about">
           <div className="about-content">
-            <Breadcrumb title={"01. Who we are"} />
             <div className="about-text">
+            <h5 className="about-title">We are a team of application developers and technology consultants</h5>
               <p>
                 We are a team of web designers and programmers dedicated to
                 create best products for our clients. Our focus is to find an
@@ -44,24 +46,23 @@ class About extends React.Component {
                 most reliable hosting. We are here to strengthen your positions
                 and beat the competition out of the way.
               </p>
-              <br />
-              <h5 className="about-title">We look forward to work with:</h5>
-              <ul className="about-list">
-                <li>Small and medium-sized enterprises (SMEs)</li>
-                <li>Startups</li>
-                <li>Blockchain ventures</li>
-                <li>Advertisers</li>
-                <li>Designers</li>
-                <li>Creative individuals</li>
-                <li>Technology companies with outsource needs</li>
-              </ul>
+             
             </div>
-
+            <div className="about-text">
+                <h5 className="about-title">We look forward to work with:</h5>
+                <ul className="about-list">
+                  <li>Small and medium-sized enterprises (SMEs)</li>
+                  <li>Startups</li>
+                  <li>Blockchain ventures</li>
+                  <li>Advertisers</li>
+                  <li>Designers</li>
+                  <li>Creative individuals</li>
+                  <li>Technology companies with outsource needs</li>
+                </ul>
+              </div>
           </div>
-          
         </div>
-        <h5 className="expertise-title">Tools & Expertise:</h5>
-
+        <h5 className="expertise-title">Tools and Expertise:</h5>
         <ul className="expertise-list">
           {expertise.map(expertiseItem => (
             <li className="expertise-item">
@@ -70,11 +71,9 @@ class About extends React.Component {
             </li>
           ))}
         </ul>
-
       </CSSTransitionGroup>
     );
   }
 }
-
 
 export default About;

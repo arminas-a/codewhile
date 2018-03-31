@@ -20,7 +20,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi error vitae sed quaerat repudiandae, optio placeat reiciendis facilis fugit minus culpa, eius, blanditiis reprehenderit doloremque atque quidem voluptates consequatur velit rerum sint. Error fugit dolores, a earum eveniet maxime!",
     comments:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, officiis sint animi nemo natus blanditiis officia ipsam harum ut!",
-    image: technology_consulting,
+    image: 'https://images.pexels.com/photos/7075/people-office-group-team.jpg?auto=compress&cs=tinysrgb&dpr=2&h=350',
     id: "service-1"
   },
   {
@@ -29,7 +29,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi error vitae sed quaerat repudiandae, optio placeat reiciendis facilis fugit minus culpa, eius, blanditiis reprehenderit doloremque atque quidem voluptates consequatur velit rerum sint. Error fugit dolores, a earum eveniet maxime!",
     comments:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, officiis sint animi nemo natus blanditiis officia ipsam harum ut!",
-    image: application_development,
+    image: 'https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     id: "service-2"
   },
   {
@@ -38,7 +38,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi error vitae sed quaerat repudiandae, optio placeat reiciendis facilis fugit minus culpa, eius, blanditiis reprehenderit doloremque atque quidem voluptates consequatur velit rerum sint. Error fugit dolores, a earum eveniet maxime!",
     comments:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, officiis sint animi nemo natus blanditiis officia ipsam harum ut!",
-    image: web_design,
+    image: 'https://images.pexels.com/photos/313690/pexels-photo-313690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     id: "service-3"
   },
   {
@@ -47,7 +47,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi error vitae sed quaerat repudiandae, optio placeat reiciendis facilis fugit minus culpa, eius, blanditiis reprehenderit doloremque atque quidem voluptates consequatur velit rerum sint. Error fugit dolores, a earum eveniet maxime!",
     comments:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, officiis sint animi nemo natus blanditiis officia ipsam harum ut!",
-    image: ecommerce,
+    image: 'https://images.pexels.com/photos/5598/tablet-galaxy-white-blog.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     id: "service-4"
   },
   {
@@ -56,7 +56,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi error vitae sed quaerat repudiandae, optio placeat reiciendis facilis fugit minus culpa, eius, blanditiis reprehenderit doloremque atque quidem voluptates consequatur velit rerum sint. Error fugit dolores, a earum eveniet maxime!",
     comments:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, officiis sint animi nemo natus blanditiis officia ipsam harum ut!",
-    image: social_media_advertising,
+    image: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     id: "service-5"
   },
   {
@@ -65,7 +65,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi error vitae sed quaerat repudiandae, optio placeat reiciendis facilis fugit minus culpa, eius, blanditiis reprehenderit doloremque atque quidem voluptates consequatur velit rerum sint. Error fugit dolores, a earum eveniet maxime!",
     comments:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, officiis sint animi nemo natus blanditiis officia ipsam harum ut!",
-    image: software_prototyping,
+    image: 'https://images.pexels.com/photos/136320/pexels-photo-136320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     id: "service-6"
   },
   {
@@ -74,7 +74,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi error vitae sed quaerat repudiandae, optio placeat reiciendis facilis fugit minus culpa, eius, blanditiis reprehenderit doloremque atque quidem voluptates consequatur velit rerum sint. Error fugit dolores, a earum eveniet maxime!",
     comments:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, officiis sint animi nemo natus blanditiis officia ipsam harum ut!",
-    image: branding,
+    image: 'https://images.pexels.com/photos/167703/pexels-photo-167703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     id: "service-7"
   },
   {
@@ -83,7 +83,7 @@ const services = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi error vitae sed quaerat repudiandae, optio placeat reiciendis facilis fugit minus culpa, eius, blanditiis reprehenderit doloremque atque quidem voluptates consequatur velit rerum sint. Error fugit dolores, a earum eveniet maxime!",
     comments:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi, officiis sint animi nemo natus blanditiis officia ipsam harum ut!",
-    image: outsourcing,
+    image: 'https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350',
     id: "service-8"
   }
 ];
