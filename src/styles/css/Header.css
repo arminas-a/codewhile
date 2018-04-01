@@ -63,7 +63,7 @@
 .header-desktop-nav {
   position: absolute;
   right: 0;
-  top: 25px; }
+  top: 24px; }
   .header-desktop-nav .header-desktop-list {
     list-style-type: none;
     margin: 0;
@@ -78,8 +78,8 @@
 
 .header-desktop-logo {
   position: absolute;
-  top: 28px;
-  height: 24px; }
+  top: 24px;
+  height: 32px; }
 
 .header-mobile-logo {
   left: 24px !important;
