@@ -15,7 +15,7 @@ const menuList = ["About", "Services", "Career", "Contact"];
 
 const Header = ({ elements }) => (
   <div className="header">
-    <HeaderDesktop elements={menuList} />
+    <HeaderDesktop elements={menuList} color={"#fff"}/>
     <HeaderMobile elements={menuList} />
   </div>
 );

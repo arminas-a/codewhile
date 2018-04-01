@@ -1,29 +1,86 @@
 @import "Global";
 
 .services-intro-title {
-  font-size: 56px;
+  font-size: 2rem;
   display: block;
-  color: #fff;
   @include for-size(phone-only) {
     font-size: 28px;
   }
 }
-.services-intro-description{
-    font-size: 1.15rem;
+.services-intro-description {
+  font-size: 1.15rem;
 }
 
 .services-intro {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    h6 {
-        color: #fff;
+  display: block;
+
+  margin-bottom: 50px;
+}
+
+.services-wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-gap: 50px;
+  align-items: flex-start;
+  @include for-size(phone-only) {
+    display: block;
+
+  }
+}
+
+.services-intro-link-container {
+  border-radius: 2px;
+}
+
+.services-intro-link-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  .services-intro-link {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ebebeb;
+    padding: 1rem 0;
+    :hover {
+      color: $brand-color-one;
     }
 
+  }
 }
 
-.services-container {
-    background: linear-gradient(to right, #ff6a00, #ffaa00, #ff6a00);
-    padding-top: 50px;
-}
+// .tip {
+//   background: $brand-color-one;
+//   padding: 1rem;
+//   text-align: center;
+//   .tip-heading {
+//     color: #fff;
+//   }
+// }
 
+// @include for-size(phone-only) {
+//     display: block;
+//     .section-container {
+//         margin-bottom: 50px;
+//     }
+//   }
+//   @include for-size(tablet-portrait-up) {
+//     .services-grid-container {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr;
+//         grid-gap: 50px;
+//     }
+//   }
+//   @include for-size(tablet-landscape-up) {
+//     .services-grid-container {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr;
+//         grid-gap: 50px;
+//     }
+//   }
+//   @include for-size(desktop-up) {
+//     .services-grid-container {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr;
+//         grid-gap: 50px;
+//         margin-bottom: 50px;
+//     }
+//   }

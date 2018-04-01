@@ -1,19 +1,19 @@
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .home-container,
   .about-container,
   .career-container,
-  .section,
-  .services-intro,
+  .services-container,
+  .contact-container,
   .footer {
     margin-left: 1rem;
     margin-right: 1rem; } }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .home-container,
   .about-container,
   .career-container,
-  .section,
-  .services-intro,
+  .services-container,
+  .contact-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -22,8 +22,8 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
-  .services-intro,
+  .services-container,
+  .contact-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -32,17 +32,17 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
-  .services-intro,
+  .services-container,
+  .contact-container,
   .footer {
     margin-left: 20rem;
     margin-right: 20rem; } }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   h1 {
     font-size: 2rem; } }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   h1 {
     font-size: 2.5rem; } }
 
@@ -55,10 +55,9 @@
     font-size: 4rem; } }
 
 .services-intro-title {
-  font-size: 56px;
-  display: block;
-  color: #fff; }
-  @media (max-width: 599px) {
+  font-size: 2rem;
+  display: block; }
+  @media (max-width: 699px) {
     .services-intro-title {
       font-size: 28px; } }
 
@@ -66,12 +65,28 @@
   font-size: 1.15rem; }
 
 .services-intro {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-  .services-intro h6 {
-    color: #fff; }
+  display: block;
+  margin-bottom: 50px; }
 
-.services-container {
-  background: linear-gradient(to right, #ff6a00, #ffaa00, #ff6a00);
-  padding-top: 50px; }
+.services-wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-gap: 50px;
+  align-items: flex-start; }
+  @media (max-width: 699px) {
+    .services-wrapper {
+      display: block; } }
+
+.services-intro-link-container {
+  border-radius: 2px; }
+
+.services-intro-link-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  .services-intro-link-list .services-intro-link {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ebebeb;
+    padding: 1rem 0; }
+    .services-intro-link-list .services-intro-link :hover {
+      color: #ff3366; }

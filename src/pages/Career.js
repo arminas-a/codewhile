@@ -22,10 +22,10 @@ class Career extends React.Component {
         component="div"
         className="career-container"
       >
+      <Breadcrumb title={"03. What we look for"} />
+
         <div className="career">
           <div className="career-content">
-            <Breadcrumb title={"Who we are looking for"} />
-            <h2>We are looking for team mates, not employees.</h2>
             <p>Currently, we are looking for:</p>
             <div className="card-row">
               {jobs.map(job => (

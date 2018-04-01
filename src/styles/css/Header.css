@@ -1,19 +1,19 @@
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .home-container,
   .about-container,
   .career-container,
-  .section,
-  .services-intro,
+  .services-container,
+  .contact-container,
   .footer {
     margin-left: 1rem;
     margin-right: 1rem; } }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .home-container,
   .about-container,
   .career-container,
-  .section,
-  .services-intro,
+  .services-container,
+  .contact-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -22,8 +22,8 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
-  .services-intro,
+  .services-container,
+  .contact-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -32,17 +32,17 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
-  .services-intro,
+  .services-container,
+  .contact-container,
   .footer {
     margin-left: 20rem;
     margin-right: 20rem; } }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   h1 {
     font-size: 2rem; } }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   h1 {
     font-size: 2.5rem; } }
 
@@ -56,7 +56,7 @@
 
 .header-container {
   height: 80px;
-  background: linear-gradient(135deg, #232532, #323648, #232532); }
+  background: linear-gradient(to right, #000, #212121, #000); }
   .header-container .header-mobile-anchor {
     display: inline-block !important; }
 
@@ -74,9 +74,7 @@
   .header-desktop-nav .header-desktop-menu-item {
     margin-left: 1.5rem; }
     .header-desktop-nav .header-desktop-menu-item :hover {
-      opacity: 0.75; }
-    .header-desktop-nav .header-desktop-menu-item .header-desktop-menu-link {
-      color: #fff; }
+      opacity: 0.5; }
 
 .header-desktop-logo {
   position: absolute;
@@ -92,7 +90,7 @@
   margin: 0;
   padding: 0; }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .header {
     position: fixed;
     background: inherit;
@@ -121,11 +119,14 @@
   top: 0;
   right: 0; }
 
+.header-desktop-menu-item a {
+  font-weight: 400; }
+
 .header-mobile-menu-link {
-  font-size: 1.15rem; }
+  font-weight: 900; }
 
 .header-mobile-email {
-  color: #5B5E6D !important; }
+  color: #6d6f7b !important; }
 
 /* Color/shape of close button cross */
 .bm-cross {
@@ -139,7 +140,7 @@
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #FF6A00; }
+  fill: #ff3366; }
 
 /* Wrapper for item list */
 .bm-item-list {
@@ -155,15 +156,14 @@
     padding: 0; }
   .bm-item-list a {
     text-decoration: none;
-    color: #323648;
-    font-family: "FF_Mark_Regular", "sans serif"; }
+    color: #323648; }
 
 .header-mobile-hr {
-  background: #5B5E6D !important;
+  background: #6d6f7b !important;
   margin: 1rem 0; }
 
 .header-mobile-copyright {
-  font-sizE: 0.913rem; }
+  font-size: 0.913rem; }
 
 /* Styling of overlay */
 .bm-overlay {
@@ -171,7 +171,7 @@
   height: 100vh;
   color: #fff; }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .header-desktop-logo {
     left: 1rem; }
   .bm-burger-button {
@@ -180,20 +180,23 @@
   .header-desktop-nav {
     display: none; } }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .header-desktop-logo {
     left: 5rem; }
-  .bm-burger-button {
+  .bm-burger-button,
+  .header-desktop-nav {
     right: 5rem; } }
 
 @media (min-width: 900px) {
   .header-desktop-logo {
     left: 5rem; }
-  .bm-burger-button, .header-desktop-nav {
+  .bm-burger-button,
+  .header-desktop-nav {
     right: 5rem; } }
 
 @media (min-width: 1200px) {
   .header-desktop-logo {
     left: 20rem; }
-  .bm-burger-button, .header-desktop-nav {
+  .bm-burger-button,
+  .header-desktop-nav {
     right: 20rem; } }

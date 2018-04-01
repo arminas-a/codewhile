@@ -1,18 +1,17 @@
 import React from "react";
 import { CSSTransitionGroup } from "react-transition-group";
+import { HashLink as Link } from "react-router-hash-link";
 import "./../styles/css/Global.css";
 import "./../styles/css/Services.css";
 import Section from "../components/elements/Section";
 import services from "../data/services";
 import Breadcrumb from "../components/elements/Breadcrumb";
-import coding from "../images/coding.png";
-import Subheader from '../components/elements/Subheader';
-
-const sublinks = ['1', '2', '3'];
+import Subheader from "../components/elements/Subheader";
+import Sitemap from "../components/elements/Sitemap";
 
 class Services extends React.Component {
   componentDidMount() {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
   render() {
     let servicesGrid = services.map(service => {
@@ -26,6 +25,20 @@ class Services extends React.Component {
         />
       );
     });
+    let servicesLinks = services.map(service => {
+      return (
+        <li className="services-intro-link">
+          <Link className="services-intro-link-anchor"
+            scroll={el => el.scrollIntoView(true)}
+            to={`services#${service.heading.toLowerCase().replace(" ", "-")}`}
+          >
+            {" "}
+            {service.heading}
+          </Link>
+        </li>
+        
+      );
+    });
     return (
       <CSSTransitionGroup
         transitionName="example"
@@ -36,16 +49,19 @@ class Services extends React.Component {
         component="div"
         className="services-container"
       >
+      <Breadcrumb title={"02. What we do"} />
+      <div className="services-wrapper">
         <div className="services-intro">
           <div className="services-intro-content">
-            <Breadcrumb title={"What we do"} />
-            <h2 className="services-intro-title">
-              We provide digital presence services to businesses, ventures and
-              individuals.
-            </h2>
+            <div className="services-intro-link-container">
+              <ul className="services-intro-link-list">{servicesLinks}</ul>
+            </div>
           </div>
         </div>
-        {servicesGrid}
+        <div className="section-wrapper">
+          <div className="services-grid-container">{servicesGrid}</div>
+        </div>
+        </div>
       </CSSTransitionGroup>
     );
   }

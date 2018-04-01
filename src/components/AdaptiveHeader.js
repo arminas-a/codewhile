@@ -13,10 +13,10 @@ class Adaptive extends React.Component {
     const { match, location, history } = this.props;
     let headerColor;
     let textColor;
-    if (location.pathname === "/services") {
-      headerColor = {
-        background: "linear-gradient(to right, #ff6a00, #ffaa00, #ff6a00)" 
-      };}
+    // if (location.pathname === "/services") {
+    //   headerColor = {
+    //     background: "linear-gradient(to right, #ff6a00, #ffaa00, #ff6a00)" 
+    //   };}
       
     //   else if (location.pathname === "/career") {
     //   headerColor = { background: "linear-gradient(to right,#338540,#4bba5d)" };

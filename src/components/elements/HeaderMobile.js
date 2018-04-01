@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { stack as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 import { array } from "prop-types";
 
 import logo_dark from "./../../images/logo_dark2.svg";

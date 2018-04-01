@@ -1,13 +1,16 @@
 $font-color-light: #fff;
 $font-color-dark: #323648;
-$font-color-darken: #5B5E6D;
+$font-color-darken: #6d6f7b;
 $background-light: #ffffff;
 $background-dark: #212121;
-$brand-color-one: #FF6A00;
+$brand-color-one: #ff3366;
 $brand-color-two: #9013fe;
+$gradient: linear-gradient(to right, #000, #212121, #000) ;
+$main-font: 'Lato', sans-serif;
+
 
 @mixin for-size($range) {
-  $phone-upper-boundary: 600px;
+  $phone-upper-boundary: 700px;
   $tablet-portrait-upper-boundary: 900px;
   $tablet-landscape-upper-boundary: 1200px;
   $desktop-upper-boundary: 1800px;
@@ -39,8 +42,8 @@ $brand-color-two: #9013fe;
 .home-container,
 .about-container,
 .career-container,
-.section,
-.services-intro,
+.services-container,
+.contact-container,
 .footer {
     @include for-size(phone-only) {
         margin-left: 1rem;

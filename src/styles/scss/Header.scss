@@ -2,21 +2,22 @@
 
 .header-container {
   height: 80px;
-  background: linear-gradient(135deg, #232532, $font-color-dark, #232532);
+
+
+  background: $gradient;
   .header-mobile-anchor {
     display: inline-block !important;
   }
 }
 
-
 .header-desktop-nav {
   position: absolute;
-  right:0;
+  right: 0;
   top: 25px;
   .header-desktop-list {
     list-style-type: none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: flex-end;
     align-content: center;
@@ -24,15 +25,12 @@
   .header-desktop-menu-item {
     margin-left: 1.5rem;
     :hover {
-      opacity:0.75;
-    }
-    .header-desktop-menu-link {
-      color: #fff;
+      opacity: 0.5;
     }
   }
 }
 
-.header-desktop-logo{
+.header-desktop-logo {
   position: absolute;
   top: 28px;
   height: 24px;
@@ -45,22 +43,20 @@
 }
 
 .header-mobile-list {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
+
   @include for-size(phone-only) {
     position: fixed;
     background: inherit;
     width: 100%;
     height: 80px;
     z-index: 1000;
+  }
 }
-
-}
-
-
 
 .hidden {
   overflow: hidden;
@@ -89,8 +85,14 @@
   }
 }
 
+.header-desktop-menu-item {
+  a {
+  font-weight: 400;
+  }
+}
+
 .header-mobile-menu-link {
-  font-size: 1.15rem;
+  font-weight: 900;
 }
 
 .header-mobile-email {
@@ -100,7 +102,6 @@
 /* Color/shape of close button cross */
 .bm-cross {
   background: $font-color-dark;
-
 }
 
 /* General sidebar styles */
@@ -132,8 +133,6 @@
   a {
     text-decoration: none;
     color: $font-color-dark;
-    font-family: "FF_Mark_Regular", "sans serif";
-
   }
 }
 
@@ -143,7 +142,7 @@
 }
 
 .header-mobile-copyright {
-  font-sizE: 0.913rem;
+  font-size: 0.913rem;
 }
 
 /* Styling of overlay */
@@ -171,16 +170,17 @@
   .header-desktop-logo {
     left: 5rem;
   }
-  .bm-burger-button {
+  .bm-burger-button,
+  .header-desktop-nav {
     right: 5rem;
   }
-
 }
 @include for-size(tablet-landscape-up) {
   .header-desktop-logo {
     left: 5rem;
   }
-  .bm-burger-button, .header-desktop-nav{
+  .bm-burger-button,
+  .header-desktop-nav {
     right: 5rem;
   }
 }
@@ -188,7 +188,8 @@
   .header-desktop-logo {
     left: 20rem;
   }
-  .bm-burger-button, .header-desktop-nav {
+  .bm-burger-button,
+  .header-desktop-nav {
     right: 20rem;
   }
 }

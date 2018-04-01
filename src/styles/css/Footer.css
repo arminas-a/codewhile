@@ -1,19 +1,19 @@
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .home-container,
   .about-container,
   .career-container,
-  .section,
-  .services-intro,
+  .services-container,
+  .contact-container,
   .footer {
     margin-left: 1rem;
     margin-right: 1rem; } }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .home-container,
   .about-container,
   .career-container,
-  .section,
-  .services-intro,
+  .services-container,
+  .contact-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -22,8 +22,8 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
-  .services-intro,
+  .services-container,
+  .contact-container,
   .footer {
     margin-left: 5rem;
     margin-right: 5rem; } }
@@ -32,17 +32,17 @@
   .home-container,
   .about-container,
   .career-container,
-  .section,
-  .services-intro,
+  .services-container,
+  .contact-container,
   .footer {
     margin-left: 20rem;
     margin-right: 20rem; } }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   h1 {
     font-size: 2rem; } }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   h1 {
     font-size: 2.5rem; } }
 
@@ -55,14 +55,13 @@
     font-size: 4rem; } }
 
 .footer-container {
-  border-top: 1px solid transparent;
-  background: linear-gradient(45deg, #232532, #323648, #232532);
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background: linear-gradient(to right, #000, #212121, #000); }
 
 .footer {
-  margin-top: 50px;
   display: flex;
-  color: #323648; }
+  color: #fff; }
   .footer h6, .footer p, .footer a {
     color: #fff; }
   .footer p {
@@ -71,7 +70,7 @@
 .footer-logo {
   height: 20px; }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .footer {
     flex-direction: column-reverse; }
     .footer .footer-left {
@@ -79,7 +78,7 @@
     .footer .footer-right {
       width: 100%; } }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .footer .footer-left {
     width: 50%; }
   .footer .footer-right {

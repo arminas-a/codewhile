@@ -2,23 +2,25 @@
 
 .career-container {
   margin-bottom: 50px;
-  margin-top: 50px;
 }
 
 .career-image-container {
   width: 50%;
   text-align: right;
-  margin-left:1rem;
+  margin-left: 1rem;
   @include for-size(phone-only) {
     width: 100%;
     margin-bottom: 50px;
-    margin-left:0;
+    margin-left: 0;
   }
   .career-image {
     max-width: 500px;
     width: 100%;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 50px;
+    @include for-size(phone-only) {
+      max-width: 100%;
+    }
   }
 }
 // .values-table-container {

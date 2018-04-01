@@ -1,71 +1,44 @@
 @import "Global";
 
-.contact {
-  section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 1rem;
-  }
-
-  .form {
-    border: 1px solid black;
-  }
-  h2 {
-    $font-color-dark: #212121;
+.contact-container {
+  margin-bottom: 50px;
+  .invitation {
+    margin-bottom: 50px;
   }
 }
 .form-container {
-  min-width: 50%;
-  height: auto;
-
   form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  label {
-    padding: 1rem;
-  }
-  input {
-    padding: 1rem;
-    margin: 1rem;
-    box-sizing: border-box;
-    margin: 0 auto;
+    > * {
+      display: block;
+      > * {
+        display: block;
+      }
+    }
   }
   input::placeholder {
     font-size: 1rem;
   }
-  button {
-    min-width: 5rem;
-    height: auto;
-    margin: 0 auto;
-    background: transparent;
-    padding: 1.15rem;
-    margin: 1rem;
-    cursor: pointer;
-  }
-  input,
-  textarea,
-  button {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    outline: none;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    -webkit-appearance: none;
-  }
-  button:hover {
-    border: 1px solid rgba(33, 33, 33, 0.6);
-  }
+
   input,
   textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
     background: transparent;
     color: $font-color-dark;
-    min-width: 100%;
-    margin-bottom: 1rem;
+    width: 40%;
+    margin-bottom: 2rem;
+    
+    @include for-size(phone-only) {
+      width: 100%;
+    }
   }
+
   input:focus,
   textarea:focus {
     box-shadow: none;
@@ -75,15 +48,3 @@
     height: 10rem;
   }
 }
-
-@media all and (max-width: 1023px) {
-  .services, .about, .contact {
-    section {
-      flex-direction: column;
-      > * {
-        min-width: 100%;
-      }
-    }
-  }
-}
-
