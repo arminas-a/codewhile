@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://arminas-a.github.io/codewhile",
+  "homepage": "https://www.codefuly.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,6 @@
     "react-burger-menu": "^2.3.0",
     "react-dom": "^16.2.0",
     "react-form": "^2.16.1",
-    "react-instafeed": "^0.4.0",
     "react-router-dom": "^4.2.2",
     "react-router-hash-link": "^1.2.0",
     "react-scripts": "1.0.17",
@@ -25,7 +24,7 @@
     "watch-css": "npm run build-css && node-sass-chokidar ./src/styles/scss -o ./src/styles/css --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build netlify-deploy",
+    "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
