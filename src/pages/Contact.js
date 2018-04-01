@@ -26,7 +26,7 @@ class Contact extends React.Component {
 
         <div className="invitation">
           <h5 className="invitation-heading">Contact us</h5>
-          <p className="invitation-description">Every great partnership starts from 'Hello'.</p>
+          <p className="invitation-description" id="invitation-description">Every great partnership starts from 'Hello'.</p>
         </div>
         <div className="form-container">
           <ContactForm />

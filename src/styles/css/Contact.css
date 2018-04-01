@@ -93,3 +93,15 @@
 
 .form-container textarea {
   height: 10rem; }
+
+button {
+  outline: none; }
+
+.success {
+  background: #4BB543;
+  border-color: #4BB543; }
+
+.success:hover {
+  background: #4BB543;
+  border-color: #4BB543;
+  color: #fff; }

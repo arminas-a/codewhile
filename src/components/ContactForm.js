@@ -22,7 +22,12 @@ class ContactForm extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
     })
-      .then(() => alert("Success!"))
+      .then(() => {
+        document.getElementById("submit-button").innerHTML = "Success";
+        document.getElementById("submit-button").className += " success";
+        document.getElementById("invitation-description").innerHTML = "Thank you for your message. We will contact you soon."
+
+      })
       .catch(error => alert(error));
 
     e.preventDefault();
@@ -41,6 +46,7 @@ class ContactForm extends React.Component {
             name="name"
             value={name}
             onChange={this.handleChange}
+            required
           />
         </label>
 
@@ -51,6 +57,7 @@ class ContactForm extends React.Component {
             name="email"
             value={email}
             onChange={this.handleChange}
+            required
           />
         </label>
 
@@ -60,10 +67,11 @@ class ContactForm extends React.Component {
             name="message"
             value={message}
             onChange={this.handleChange}
+            required
           />
         </label>
 
-        <button className="Button" type="submit">Send</button>
+        <button className="Button" id="submit-button" type="submit" onclick={`this.blur();`}>Send</button>
       </form>
     );
   }

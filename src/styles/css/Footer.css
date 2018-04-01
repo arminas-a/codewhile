@@ -57,7 +57,7 @@
 .footer-container {
   padding-bottom: 50px;
   padding-top: 50px;
-  background: #0a1922; }
+  background: linear-gradient(to right, #11171C, #0a1922, #11171C); }
 
 .footer {
   display: flex;

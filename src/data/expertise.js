@@ -23,27 +23,27 @@ import gulp from "../images/expertise/gulp.svg";
 
 const expertise = [
   {
-    heading: "angular",
+    heading: "Angular",
     icon: angular
   },
   {
-    heading: "aws",
+    heading: "AWS",
     icon: aws
   },
   {
-    heading: "bower",
+    heading: "Bower",
     icon: bower
   },
   {
-    heading: "elastic",
+    heading: "Elastic",
     icon: elastic
   },
   {
-    heading: "docker",
+    heading: "Docker",
     icon: docker
   },
   {
-    heading: "es6",
+    heading: "ES6",
     icon: es6
   },
   {
@@ -79,7 +79,7 @@ const expertise = [
     icon: rabbitmq
   },
   {
-    heading: "nodejs",
+    heading: "node.js",
     icon: nodejs
   },
   {
