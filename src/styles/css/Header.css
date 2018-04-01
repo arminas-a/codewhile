@@ -56,7 +56,7 @@
 
 .header-container {
   height: 80px;
-  background: linear-gradient(to right, #000, #212121, #000); }
+  background: #0a1922; }
   .header-container .header-mobile-anchor {
     display: inline-block !important; }
 
