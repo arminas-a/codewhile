@@ -5,7 +5,7 @@ const jobs = [
     {
       icon: frontend_engineer,
       heading: "Frontend engineer",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, eveniet."
+      description: "Hi."
     },
     {
       icon: backend_engineer,
